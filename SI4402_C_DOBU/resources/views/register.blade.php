@@ -149,7 +149,7 @@
                                                                                         aria-hidden="true"></i></a>
                         </div>
                     </div>
-                    <button class="btn btn-primary  text-white mt-4 w-75 text-title2" type="submit">Daftar</button>
+                    <button class="btn btn-primary text-white mt-4 w-75 text-title2" type="submit">Daftar</button>
                    
                 </form>
                 <p class="text-title2 text-blue mb-5"> Sudah punya akun ? <a href=" {{ url('/login') }}"

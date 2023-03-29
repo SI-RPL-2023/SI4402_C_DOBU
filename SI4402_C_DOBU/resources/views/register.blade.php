@@ -149,7 +149,8 @@
                                                                                         aria-hidden="true"></i></a>
                         </div>
                     </div>
-                    <button class="btn bg-red text-white mt-4 w-75 text-title2" type="submit">Daftar</button>
+                    <button class="btn btn-primary bg-red text-white mt-4 w-75 text-title2" type="button">Daftar</button>
+                    <!-- <button type="button" class="btn btn-primary">Primary</button> -->
                 </form>
                 <p class="text-title2 text-blue mb-5"> Sudah punya akun ? <a href=" {{ url('/login') }}"
                                                                             class="text-decoration-none">

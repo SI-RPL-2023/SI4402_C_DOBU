@@ -2,21 +2,35 @@
 
 namespace Database\Seeders;
 
-// use Illuminate\Database\Console\Seeds\WithoutModelEvents;
+use App\Models\Donator;
+use App\Models\DonorNote;
+use App\Models\Institution;
+use App\Models\Status;
 use Illuminate\Database\Seeder;
+
 
 class DatabaseSeeder extends Seeder
 {
     /**
      * Seed the application's database.
+     *
+     * @return void
      */
-    public function run(): void
+    public function run()
     {
-        // \App\Models\User::factory(10)->create();
+        $donators = new DonatorsSeeder();
+        $institutions = new InstitutionsSeeder();
+        $status_donor = new StatusDonorSeeder();
+        $employees = new EmployeesSeeder();
+        $blood_bank = new BloodBankSeeder();
+        $donor_events = new DonorEventsSeeder();
 
-        // \App\Models\User::factory()->create([
-        //     'name' => 'Test User',
-        //     'email' => 'test@example.com',
-        // ]);
+        $donators->run();
+        $institutions->run();
+        $status_donor->run();
+        $employees->run();
+        $blood_bank->run();
+        $donor_events->run();
+
     }
 }

@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-    <title>DOBU</title>
+    <title>Gelood</title>
     <meta content="" name="description">
     <meta content="" name="keywords">
 
@@ -37,12 +37,12 @@
     <header id="header" class="fixed-top">
         <div class="container d-flex align-items-center">
 
-            <h1 class="logo me-auto"><a href="index.html">DOBU</a></h1>
+            <h1 class="logo me-auto"><a href="index.html">Gelood</a></h1>
             <nav id="navbar" class="navbar order-last order-lg-0">
                 <ul>
                     <li><a class="nav-link scrollto" href="#hero">Home</a></li>
                     <li><a class="nav-link scrollto" href="#services">Services</a></li>
-                    <li><a class="nav-link scrollto" href="#location">Location</a></li>
+                    <li><a class="nav-link scrollto" href="#team">Our Team</a></li>
                     <li><a class="nav-link scrollto" href="#faq">FAQ</a></li>
                 </ul>
                 <i class="bi bi-list mobile-nav-toggle"></i>
@@ -57,8 +57,8 @@
     <!-- ======= Hero Section ======= -->
     <section id="hero" class="d-flex align-items-center">
         <div class="container">
-            <h1>Welcome to DOBU</h1>
-            <h2>Berbagi buku, berbagi jendela dunia</h2>
+            <h1>Welcome to Gelood</h1>
+            <h2>Setetes darah anda berharga untuk jutaan orang diluar sana</h2>
             <a href="#why-us" class="btn-get-started scrollto">Get Started</a>
         </div>
     </section><!-- End Hero -->
@@ -72,13 +72,13 @@
                 <div class="row">
                     <div class="col-lg-4 d-flex align-items-stretch">
                         <div class="content">
-                            <h3>Kenapa memilih DOBU?</h3>
+                            <h3>Kenapa memilih Gelood?</h3>
                             <p>
-                                Aplikasi DOBU (Donasi Buku) adalah aplikasi yang memungkinkan masyarakat untuk
+                                Aplikasi Gelood (Get your blood) adalah aplikasi yang memungkinkan masyarakat untuk
                                 mendaftarkan
-                                diri sebagai donatur buku dan mencari informasi tentang donasi buku yang tersedia.
-                                Aplikasi ini juga dapat membantu mengelola data donasi buku dan mempromosikan kegiatan
-                                donasi buku kepada masyarakat.
+                                diri sebagai donor darah dan mencari informasi tentang donor darah yang tersedia.
+                                Aplikasi ini juga dapat membantu mengelola data donor darah dan mempromosikan kegiatan
+                                donor darah kepada masyarakat.
                             </p>
                         </div>
                     </div>
@@ -89,26 +89,26 @@
                                     <div class="icon-box mt-4 mt-xl-0">
                                         <i class="bx bx-receipt"></i>
                                         <h4>Proses daftar mudah</h4>
-                                        <p>Anda dapat mendaftarkan diri sebagai donatur buku dengan mudah melalui
-                                            aplikasi DOBU, tanpa perlu mengunjungi mencari secara
-                                            langsung ke toko loak.</p>
+                                        <p>Anda dapat mendaftarkan diri sebagai donor darah dengan mudah melalui
+                                            aplikasi gelood, tanpa perlu mengunjungi pusat donor darah secara
+                                            langsung.</p>
                                     </div>
                                 </div>
                                 <div class="col-xl-4 d-flex align-items-stretch">
                                     <div class="icon-box mt-4 mt-xl-0">
                                         <i class="bx bx-search-alt"></i>
                                         <h4>Mempermudah pencarian</h4>
-                                        <p>Aplikasi DOBU memungkinkan Anda untuk mencari donasi buku yang anda butuhkan
-                                            dengan mudah.</p>
+                                        <p>Aplikasi gelood memungkinkan Anda untuk mencari donor darah yang cocok
+                                            dengan kebutuhan Anda dengan mudah</p>
                                     </div>
                                 </div>
                                 <div class="col-xl-4 d-flex align-items-stretch">
                                     <div class="icon-box mt-4 mt-xl-0">
                                         <i class="bx bx-user"></i>
                                         <h4>Edukasi kepada masyarakat</h4>
-                                        <p>Aplikasi DOBU dapat mempromosikan kegiatan donasi buku kepada
+                                        <p>Aplikasi gelood dapat mempromosikan kegiatan donor darah kepada
                                             masyarakat dengan mudah, sehingga dapat meningkatkan kesadaran masyarakat
-                                            tentang pentingnya literasi.</p>
+                                            tentang pentingnya donor darah.</p>
                                     </div>
                                 </div>
                             </div>
@@ -125,35 +125,36 @@
 
                 <div class="section-title">
                     <h2>Services</h2>
-                    <p>Aplikasi DOBU hadir untuk mempermudah proses pendaftaran sebagai donatur buku dan
-                        mengelola data donasi buku secara efektif. Kami berharap Anda dapat menikmati layanan yang kami
+                    <p>Aplikasi Gelood hadir untuk mempermudah proses pendaftaran sebagai donor darah dan
+                        mengelola data donor darah secara efektif. Kami berharap Anda dapat menikmati layanan yang kami
                         tawarkan.</p>
                 </div>
 
                 <div class="row">
                     <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
                         <div class="icon-box">
-                            <div class="icon"><i class="fa-solid fa-book-open-reader"></i></div>
-                            <h4><a href="">Event Bazaar DOBU</a></h4>
-                            <p>Menyediakan layanan untuk mencari event donasi buku dari DOBU,
+                            <div class="icon"><i class="fas fa-heartbeat"></i></div>
+                            <h4><a href="">Event Donor Darah</a></h4>
+                            <p>Menyediakan layanan untuk mencari event donor darah dari PMI,
                                 serta membantu untuk memudahkan proses registrasi hingga event selesai</p>
                         </div>
                     </div>
 
                     <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0">
                         <div class="icon-box">
-                            <div class="icon"><i class="fa-solid fa-magnifying-glass"></i></div>
-                            <h4><a href="">Cari Stok Buku</a></h4>
-                            <p>Memberikan pelayanan dalam mencari stok buku sesuai kebutuhan pengguna</p>
+                            <div class="icon"><i class="fas fa-pills"></i></div>
+                            <h4><a href="">Cari Stok Darah</a></h4>
+                            <p>Memberikan pelayanan dalam mencari stok darah sesuai kebutuhan pengguna</p>
                         </div>
                     </div>
 
                     <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0">
                         <div class="icon-box">
-                            <div class="icon"><i class="fa-solid fa-book"></i></div>
+                            <div class="icon"><i class="fas fa-hospital-user"></i></div>
                             <h4><a href="">Berita Ter-update</a></h4>
-                            <p>Menyediakan informasi terupdate seputar buku yang tersedia, hingga tips dalam
-                                merawat buku bekas</p>
+                            <p>Menyediakan informasi terupdate seputar kesehatan, bencana alam hingga tips dalam
+                                melakukan
+                                diet</p>
                         </div>
                     </div>
                 </div>
@@ -161,27 +162,90 @@
             </div>
         </section><!-- End Services Section -->
 
-        <!-- ======= Location Section ======= -->
-        <section id="location" class="location">
+        <!-- ======= Our Team Section ======= -->
+        <section id="team" class="team">
             <div class="container">
 
                 <div class="section-title">
-                    <h2>Location</h2>
-    
+                    <h2>Our Team</h2>
+                    <p>Tim kami terdiri dari individu-individu yang berkomitmen dan berdedikasi tinggi. Kami yakin
+                        bahwa dengan kerja sama yang baik, kami dapat mencapai tujuan bersama dengan sukses.</p>
                 </div>
 
-                <div class="mb-3">
+                <div class="row">
 
-            <iframe
-              style="border: 0; width: 100%; height: 450px"
-              src="https://maps.google.com/maps?width=1101&amp;height=480&amp;hl=en&amp;q=Jl.%20Telekomunikasi%20Bandung+()&amp;t=&amp;z=13&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
-              frameborder="0"
-              allowfullscreen
-            ></iframe>
-          </div>
+                    <div class="col-lg-6">
+                        <div class="member d-flex align-items-start">
+                            <div class="pic"><img src="assets/img/doctors/doctors-1.jpg" class="img-fluid" alt=""></div>
+                            <div class="member-info">
+                                <h4>Aebil Taskari Rusydi</h4>
+                                <span>1202204126</span>
+                                <p>"Talk less do More</p>
+                                <div class="social">
+                                    <a href=""><i class="ri-twitter-fill"></i></a>
+                                    <a href=""><i class="ri-facebook-fill"></i></a>
+                                    <a href=""><i class="ri-instagram-fill"></i></a>
+                                    <a href=""> <i class="ri-linkedin-box-fill"></i> </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6 mt-4 mt-lg-0">
+                        <div class="member d-flex align-items-start">
+                            <div class="pic"><img src="assets/img/doctors/doctors-2.jpg" class="img-fluid" alt=""></div>
+                            <div class="member-info">
+                                <h4>Diandra Ridha Nurani</h4>
+                                <span>1202202124</span>
+                                <p>"Diet mulai besok"</p>
+                                <div class="social">
+                                    <a href=""><i class="ri-twitter-fill"></i></a>
+                                    <a href=""><i class="ri-facebook-fill"></i></a>
+                                    <a href=""><i class="ri-instagram-fill"></i></a>
+                                    <a href=""> <i class="ri-linkedin-box-fill"></i> </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6 mt-4">
+                        <div class="member d-flex align-items-start">
+                            <div class="pic"><img src="assets/img/doctors/doctors-3.jpg" class="img-fluid" alt=""></div>
+                            <div class="member-info">
+                                <h4>Diyas Yakluna Baihaqi</h4>
+                                <span>1202200000</span>
+                                <p>"Syukuri dan Hargai Hal-Hal yang Kamu Miliki"</p>
+                                <div class="social">
+                                    <a href=""><i class="ri-twitter-fill"></i></a>
+                                    <a href=""><i class="ri-facebook-fill"></i></a>
+                                    <a href=""><i class="ri-instagram-fill"></i></a>
+                                    <a href=""> <i class="ri-linkedin-box-fill"></i> </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6 mt-4">
+                        <div class="member d-flex align-items-start">
+                            <div class="pic"><img src="assets/img/doctors/doctors-4.jpg" class="img-fluid" alt=""></div>
+                            <div class="member-info">
+                                <h4>Magdalena Edelways Enjelina Pasaribu</h4>
+                                <span>1202200064</span>
+                                <p>"Kayaknya besok bu ngantuk"</p>
+                                <div class="social">
+                                    <a href=""><i class="ri-twitter-fill"></i></a>
+                                    <a href=""><i class="ri-facebook-fill"></i></a>
+                                    <a href=""><i class="ri-instagram-fill"></i></a>
+                                    <a href=""> <i class="ri-linkedin-box-fill"></i> </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
 
             </div>
-        </section><!-- End Services Section -->
+        </section><!-- End Our Team Section -->
 
         <!-- ======= Frequently Asked Questions Section ======= -->
         <section id="faq" class="faq section-bg">
@@ -198,29 +262,32 @@
                     <ul>
                         <li data-aos="fade-up">
                             <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" class="collapse"
-                                data-bs-target="#faq-list-1">Apakah donasi buku itu memungut biaya? <i
+                                data-bs-target="#faq-list-1">Apakah donor darah itu menyakitkan? <i
                                     class="bx bx-chevron-down icon-show"></i><i
                                     class="bx bx-chevron-up icon-close"></i></a>
                             <div id="faq-list-1" class="collapse show" data-bs-parent=".faq-list">
                                 <p>
-                                    Donasi buku tidak memungut biaya sama sekali pada prosesnya, dikarenakan kami DOBU
-                                    akan menjadi jembatan bagi siapapun yang membutuhkan buku, dan juga kami ingin melaksanakan bazaar buku
-                                    yang dapat menjadi ajang untuk menampilkan buku yang telah didonasikan.
+                                    Sakit yang dirasakan hanya sesaat, seperti dicubit. Takut akan jarum menjadi faktor
+                                    utama yang menyebabkan banyak orang berpikir bahwa proses donor darah akan
+                                    menyakitkan. Sebagian besar calon pendonor merasa takut akan jarum, namun akhirnya
+                                    merasakan proses donor darah tidak sesakit yang dipikirkan. Kamu dapat membaca
+                                    beberapa tips yang dapat dilakukan untuk membantu proses donor darah pertama menjadi
+                                    lebih nyaman.
                                 </p>
                             </div>
                         </li>
 
                         <li data-aos="fade-up" data-aos-delay="100">
                             <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse"
-                                data-bs-target="#faq-list-2" class="collapsed">Kenapa donasi buku itu penting? <i
+                                data-bs-target="#faq-list-2" class="collapsed">Kenapa donor darah itu penting? <i
                                     class="bx bx-chevron-down icon-show"></i><i
                                     class="bx bx-chevron-up icon-close"></i></a>
                             <div id="faq-list-2" class="collapse" data-bs-parent=".faq-list">
                                 <p>
-                                    Sesuai dengan slogan buku adalah jendela dunia. donasi buku dapat
-                                    menjadi jembatan kepada masa depan generasi bangsa. Selain meningkatkan tingkat
-                                    literasi, donasi buku juga membuat banyak masyarakat tertarik untuk membaca buku, karena
-                                    membantu orang yang "kurang mampu" untuk dapat membaca buku dengan gratis.
+                                    Sesuai dengan slogan dari PMI: “Mereka selamat, kita sehat”. Donor darah dapat
+                                    menyelamatkan nyawa pasien yang membutuhkan transfusi darah. Selain menyelamatkan
+                                    nyawa pasien, donor darah juga menyehatkan pendonornya, karena membantu regenerasi
+                                    sel darah baru sehingga mengurangi risiko serangan jantung, kanker dan sebagainya.
                                 </p>
                             </div>
                         </li>
@@ -228,12 +295,12 @@
                         <li data-aos="fade-up" data-aos-delay="200">
                             <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse"
                                 data-bs-target="#faq-list-3" class="collapsed">Apa yang bisa saya lakukan dengan
-                                aplikasi DOBU? <i class="bx bx-chevron-down icon-show"></i><i
+                                aplikasi Gelood? <i class="bx bx-chevron-down icon-show"></i><i
                                     class="bx bx-chevron-up icon-close"></i></a>
                             <div id="faq-list-3" class="collapse" data-bs-parent=".faq-list">
                                 <p>
-                                    Anda dapat mendaftarkan diri sebagai donasi buku,ar mencari informasi tentang donor
-                                    darah yang tersedia, dan mengelola data donasi buku melalui aplikasi DOBU.
+                                    Anda dapat mendaftarkan diri sebagai donor darah, mencari informasi tentang donor
+                                    darah yang tersedia, dan mengelola data donor darah melalui aplikasi donor darah.
                                 </p>
                             </div>
                         </li>
@@ -241,11 +308,11 @@
                         <li data-aos="fade-up" data-aos-delay="300">
                             <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse"
                                 data-bs-target="#faq-list-4" class="collapsed">Apakah informasi yang saya masukkan ke
-                                dalam aplikasi DOBU aman? <i class="bx bx-chevron-down icon-show"></i><i
+                                dalam aplikasi Gelood aman? <i class="bx bx-chevron-down icon-show"></i><i
                                     class="bx bx-chevron-up icon-close"></i></a>
                             <div id="faq-list-4" class="collapse" data-bs-parent=".faq-list">
                                 <p>
-                                    Aplikasi DOBU mengikuti standar keamanan yang ketat untuk menjaga
+                                    Aplikasi Gelood mengikuti standar keamanan yang ketat untuk menjaga
                                     keamanan informasi yang Anda masukkan ke dalam aplikasi. Namun, selalu disarankan
                                     untuk membaca syarat dan ketentuan aplikasi sebelum menggunakannya dan memastikan
                                     bahwa Anda merasa nyaman dengan cara informasi Anda akan digunakan.
@@ -255,15 +322,16 @@
 
                         <li data-aos="fade-up" data-aos-delay="400">
                             <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse"
-                                data-bs-target="#faq-list-5" class="collapsed">Apakah saya harus memiliki jenis buku
-                                yang spesifik untuk mendaftarkan diri sebagai donasi buku melalui aplikasi? <i
+                                data-bs-target="#faq-list-5" class="collapsed">Apakah saya harus memiliki tipe darah
+                                yang spesifik untuk mendaftarkan diri sebagai donor darah melalui aplikasi? <i
                                     class="bx bx-chevron-down icon-show"></i><i
                                     class="bx bx-chevron-up icon-close"></i></a>
                             <div id="faq-list-5" class="collapse" data-bs-parent=".faq-list">
                                 <p>
-                                    Jenis buku tidak merupakan syarat utama untuk mendaftarkan diri sebagai donatur buku
-                                    melalui aplikasi. jadi donatur dapat mendonasikan apapun jenis buku dan juga rentang usia bacaan buku,
-                                    asalkan tidak mengangung isi isi negatif yang terdapat dalam buku yang didonasikan.
+                                    Tipe darah tidak merupakan syarat utama untuk mendaftarkan diri sebagai donor darah
+                                    melalui aplikasi. Namun, ada beberapa persyaratan lain yang mungkin harus dipenuhi,
+                                    seperti usia minimal, berat badan minimal, dan kondisi kesehatan yang memenuhi
+                                    syarat. Ini bervariasi tergantung pada aplikasi donor darah yang Anda gunakan.
                                 </p>
                             </div>
                         </li>
@@ -281,7 +349,7 @@
 
                 <div class="section-title">
                     <h2>Gallery</h2>
-                    <p>Gallery Kegiatan Bazaar Donasi Buku Tahun 2022</p>
+                    <p>Gallery Kegiatan Donor Darah Tahun 2022</p>
                 </div>
             </div>
 
@@ -290,64 +358,64 @@
 
                     <div class="col-lg-3 col-md-4">
                         <div class="gallery-item">
-                            <a href="https://img.freepik.com/free-photo/girl-searching-books-bookstore_23-2148171425.jpg?w=1060&t=st=1680014578~exp=1680015178~hmac=a6f1b070e2bd8461e1818fa34da15128154bbe693fa8f137d6de1879dc5a5a3f" class="galelry-lightbox">
-                                <img src="https://img.freepik.com/free-photo/girl-searching-books-bookstore_23-2148171425.jpg?w=1060&t=st=1680014578~exp=1680015178~hmac=a6f1b070e2bd8461e1818fa34da15128154bbe693fa8f137d6de1879dc5a5a3f" alt="" class="img-fluid">
+                            <a href="assets/img/gallery/gallery-1.jpg" class="galelry-lightbox">
+                                <img src="assets/img/gallery/gallery-1.jpg" alt="" class="img-fluid">
                             </a>
                         </div>
                     </div>
 
                     <div class="col-lg-3 col-md-4">
                         <div class="gallery-item">
-                            <a href="https://img.freepik.com/free-photo/side-view-man-flea-market_23-2149537002.jpg?w=1060&t=st=1680014620~exp=1680015220~hmac=22a7a3ca77d9feb63cfa2e5bca550ba4a071394ea1db99c2b06dec8e007d8076" class="galelry-lightbox">
-                                <img src="https://img.freepik.com/free-photo/side-view-man-flea-market_23-2149537002.jpg?w=1060&t=st=1680014620~exp=1680015220~hmac=22a7a3ca77d9feb63cfa2e5bca550ba4a071394ea1db99c2b06dec8e007d8076" alt="" class="img-fluid">
+                            <a href="assets/img/gallery/gallery-2.jpg" class="galelry-lightbox">
+                                <img src="assets/img/gallery/gallery-2.jpg" alt="" class="img-fluid">
                             </a>
                         </div>
                     </div>
 
                     <div class="col-lg-3 col-md-4">
                         <div class="gallery-item">
-                            <a href="https://img.freepik.com/free-photo/old-books-arrangement-second-hand-market_23-2149338466.jpg?w=1060&t=st=1680014526~exp=1680015126~hmac=977f2464b6b4de03066f97cbc362a17f70f3b1aebf91bd1a9f157f74a36a23a5" class="galelry-lightbox">
-                                <img src="https://img.freepik.com/free-photo/old-books-arrangement-second-hand-market_23-2149338466.jpg?w=1060&t=st=1680014526~exp=1680015126~hmac=977f2464b6b4de03066f97cbc362a17f70f3b1aebf91bd1a9f157f74a36a23a5" alt="" class="img-fluid">
+                            <a href="assets/img/gallery/gallery-3.jpg" class="galelry-lightbox">
+                                <img src="assets/img/gallery/gallery-3.jpg" alt="" class="img-fluid">
                             </a>
                         </div>
                     </div>
 
                     <div class="col-lg-3 col-md-4">
                         <div class="gallery-item">
-                            <a href="https://img.freepik.com/free-photo/closeup-books-wellorganized-shelves-bookstore_181624-59504.jpg?w=1060&t=st=1680014979~exp=1680015579~hmac=c6187863da33af636f186a78edcb1d9feeb724cd5ab8d9c8ed463da5fc622ca3" class="galelry-lightbox">
-                                <img src="https://img.freepik.com/free-photo/closeup-books-wellorganized-shelves-bookstore_181624-59504.jpg?w=1060&t=st=1680014979~exp=1680015579~hmac=c6187863da33af636f186a78edcb1d9feeb724cd5ab8d9c8ed463da5fc622ca3" alt="" class="img-fluid">
+                            <a href="assets/img/gallery/gallery-4.jpg" class="galelry-lightbox">
+                                <img src="assets/img/gallery/gallery-4.jpg" alt="" class="img-fluid">
                             </a>
                         </div>
                     </div>
 
                     <div class="col-lg-3 col-md-4">
                         <div class="gallery-item">
-                            <a href="https://img.freepik.com/premium-photo/bookshelf-library_23-2147617634.jpg?w=1060" class="galelry-lightbox">
-                                <img src="https://img.freepik.com/premium-photo/bookshelf-library_23-2147617634.jpg?w=1060" alt="" class="img-fluid">
+                            <a href="assets/img/gallery/gallery-5.jpg" class="galelry-lightbox">
+                                <img src="assets/img/gallery/gallery-5.jpg" alt="" class="img-fluid">
                             </a>
                         </div>
                     </div>
 
                     <div class="col-lg-3 col-md-4">
                         <div class="gallery-item">
-                            <a href="https://img.freepik.com/premium-photo/asian-lgbt-woman-casual-style-with-cap-protective-mask-choosing-books-bookstore_43514-927.jpg?w=1060" class="galelry-lightbox">
-                                <img src="https://img.freepik.com/premium-photo/asian-lgbt-woman-casual-style-with-cap-protective-mask-choosing-books-bookstore_43514-927.jpg?w=1060" alt="" class="img-fluid">
+                            <a href="assets/img/gallery/gallery-6.jpg" class="galelry-lightbox">
+                                <img src="assets/img/gallery/gallery-6.jpg" alt="" class="img-fluid">
                             </a>
                         </div>
                     </div>
 
                     <div class="col-lg-3 col-md-4">
                         <div class="gallery-item">
-                            <a href="https://img.freepik.com/premium-photo/japanese-manga-books-lined-up-bookstore-shelf_322182-194.jpg?w=996" class="galelry-lightbox">
-                                <img src="https://img.freepik.com/premium-photo/japanese-manga-books-lined-up-bookstore-shelf_322182-194.jpg?w=996" alt="" class="img-fluid">
+                            <a href="assets/img/gallery/gallery-7.jpg" class="galelry-lightbox">
+                                <img src="assets/img/gallery/gallery-7.jpg" alt="" class="img-fluid">
                             </a>
                         </div>
                     </div>
 
                     <div class="col-lg-3 col-md-4">
                         <div class="gallery-item">
-                            <a href="https://img.freepik.com/premium-photo/asian-plus-size-woman-protective-face-mask-choosing-books-bookstore-shopping-mall-area_43514-719.jpg?w=996" class="galelry-lightbox">
-                                <img src="https://img.freepik.com/premium-photo/asian-plus-size-woman-protective-face-mask-choosing-books-bookstore-shopping-mall-area_43514-719.jpg?w=996" alt="" class="img-fluid">
+                            <a href="assets/img/gallery/gallery-8.jpg" class="galelry-lightbox">
+                                <img src="assets/img/gallery/gallery-8.jpg" alt="" class="img-fluid">
                             </a>
                         </div>
                     </div>
@@ -366,13 +434,13 @@
                 <div class="row">
 
                     <div class="col-lg-3 col-md-6 footer-contact">
-                        <h3>DOBU</h3>
+                        <h3>Gelood</h3>
                         <p>
-                            Jl. Telekomunikasi <br>
+                            PGA Street <br>
                             Bandung<br>
                             Indonesia <br><br>
                             <strong>Phone:</strong> 5589 55488 55<br>
-                            <strong>Email:</strong> info.dobu@gmail.com<br>
+                            <strong>Email:</strong> gelood@gmail.com<br>
                         </p>
                     </div>
 

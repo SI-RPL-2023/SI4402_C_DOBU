@@ -10,7 +10,7 @@
     <meta content="" name="keywords">
 
     <!-- Favicons -->
-    <link rel="icon" href="{{ url('/images/icon/ic_drop.svg') }}">
+    <link rel="icon" href="{{ url('/images/icon/book.svg') }}">
     <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
     <!-- Google Fonts -->

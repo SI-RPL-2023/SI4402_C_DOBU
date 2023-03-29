@@ -37,7 +37,7 @@
         <li class="nav-item ml-2">
             <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo"
                aria-expanded="true" aria-controls="collapseTwo">
-                <img src="{{ url('/images/icon/ic_drop.svg') }}" class="img-fluid" width="24px" alt="donor">
+                <img src="{{ url('/images/icon/book.svg') }}" class="img-fluid" width="24px" alt="donor">
                 <span
                     class="text-grey hover-underline-animation {{ ($active === "donor") ? 'active' : '' }}">Donor</span>
             </a>
@@ -67,7 +67,7 @@
 
         <li class="nav-item ml-2">
             <a class="nav-link" href="{{ url('/_bank') }}">
-                <img src="{{ url('/images/icon/ic_drop.svg') }}" class="img-fluid" width="24px" alt="home">
+                <img src="{{ url('/images/icon/book.svg') }}" class="img-fluid" width="24px" alt="home">
                 <span
                     class="text-grey hover-underline-animation {{ ($active === "bank") ? 'active' : '' }}">Kelola Bank Darah</span></a>
         </li>

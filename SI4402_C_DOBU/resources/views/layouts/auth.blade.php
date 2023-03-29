@@ -9,7 +9,7 @@
     <meta name="description" content="Gelood - Yuk Peduli Sesama">
     <meta name="author" content="Kelompok Mantap">
     <title>DOBU - {{ $title }}</title>
-    <link rel="icon" href="{{ url('/images/icon/ic_drop.svg') }}">
+    <link rel="icon" href="{{ url('/images/icon/book.svg') }}">
     <link href="{{ url('/vendor/fontawesome-free/css/all.min.css') }}" rel="stylesheet" type="text/css">
     <link href="{{ url('/css/sb-admin-2.min.css') }}" rel="stylesheet" type="text/css">
     <link href="{{ url('/css/dorplas.css') }}" rel="stylesheet" type="text/css">

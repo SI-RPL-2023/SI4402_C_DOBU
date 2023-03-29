@@ -9,9 +9,9 @@
         <div class="col-md-6 col-sm-12 d-flex">
             <div class=" flex-column mx-auto" style="padding-top: 200px">
                 <p class="text-left text-blue text-title1 pb-2"
-                   style="font-size: 50px;line-height: 30px;font-family: 'Montserrat', sans-serif;">Welcome to Gelood</p>
-                <p class="text-left text-body1 pb-2 my-2" style="max-width: 500px">“Kebaikan sejati dan tulus adalah kebaikan yang dilakukan tanpa diketahui orang yang menerima kebaikan.”</p>
-                <img class="img-fluid mt-3" src="{{ url('/images/nurse_with_medicine.png') }}" alt="nurse">
+                   style="font-size: 50px;line-height: 30px;font-family: 'Montserrat', sans-serif;">Welcome to Dobu</p>
+                <p class="text-left text-body1 pb-2 my-2" style="max-width: 500px">“Books are the only present you can open again and again.”</p>
+                <img class="img-fluid mt-3" src="{{ url('/images/books.jpg') }}" alt="nurse">
             </div>
         </div>
         <div class="col-md-6 col-sm-12 d-flex flex-column m-auto pt-5">
@@ -44,15 +44,15 @@
                     @enderror
                 </div>
                 <div class="form-group mb-3 w-75">
-                    <label for="blood_type_donators" class="text-title1 text-blue">Masukkan Golongan Darah</label>
+                    <label for="blood_type_donators" class="text-title1 text-blue">Status</label>
                     <select
                         class="custom-select text-title1 text-blue mt-1 @error('blood_type_donators') is-invalid @enderror"
                         id="blood_type_donators" name="blood_type_donators" required>
-                        <option value="" disabled selected>Golongan Darah</option>
-                        <option value="A">A</option>
-                        <option value="B">B</option>
-                        <option value="AB">AB</option>
-                        <option value="O">O</option>
+                        <option value="" disabled selected>----</option>
+                        <option value="Pekerja">Pekerja</option>
+                        <option value="Pelajar">Pelajar</option>
+                        <option value="Umum">Umum</option>
+            
                     </select>
                     @error('blood_type_donators')
                     <div class="invalid-feedback">
@@ -61,13 +61,13 @@
                     @enderror
                 </div>
                 <div class="form-group mb-3 w-75">
-                    <label for="rhesus_type_donators" class="text-title1 text-blue">Masukkan Jenis Rhesus</label>
+                    <label for="rhesus_type_donators" class="text-title1 text-blue">Jenis Kelamin</label>
                     <select
                         class="custom-select text-title1 text-blue mt-1 @error('rhesus_type_donators') is-invalid @enderror"
                         id="rhesus_type_donators" name="rhesus_type_donators" required>
-                        <option value="" disabled selected>Rhesus</option>
-                        <option value="positive">Positif (+)</option>
-                        <option value="negative">Negatif (-)</option>
+                        <option value="" disabled selected>Kelamin</option>
+                        <option value="Wanita">Wanita</option>
+                        <option value="Pria">Pria</option>
                     </select>
                     @error('rhesus_type_donators')
                     <div class="invalid-feedback">
@@ -122,11 +122,11 @@
                                                                                     aria-hidden="true"></i></a>
                     </div>
                 </div>
-                <button class="btn bg-red text-white mt-4 w-75 text-title2" type="submit" >Daftar</button>
+                <button class="btn bg-primary text-white mt-4 w-75 text-title2" type="submit" >Daftar</button>
             </form>
             <p class="text-title2 text-blue mb-5"> Sudah punya akun ? <a href=" {{ url('/login') }}"
                                                                          class="text-decoration-none">
-                    <span class="text-red">Masuk</span>
+                    <span class="text-primary">Masuk</span>
                 </a></p>
         </div>
     </div>

@@ -9,9 +9,9 @@
         <div class="col-md-6 col-sm-12 d-flex">
             <div class=" flex-column mx-auto" style="padding-top: 200px">
                 <p class="text-left text-blue text-title1 pb-2"
-                   style="font-size: 50px;line-height: 30px;font-family: 'Montserrat', sans-serif;">Welcome to Gelood</p>
-                <p class="text-left text-body1 pb-2 my-2" style="max-width: 500px">“Kebaikan yang kita berikan pada orang lain sesungguhnya adalah kebaikan yang kita tanam untuk diri sendiri”</p>
-                <img class="img-fluid mt-3" src="{{ url('/images/nurse_with_medicine.png') }}" alt="nurse">
+                   style="font-size: 50px;line-height: 30px;font-family: 'Montserrat', sans-serif;">Welcome to DOBU</p>
+                <p class="text-left text-body1 pb-2 my-2" style="max-width: 500px">“Books are the only present you can open again and again.”</p>
+                <img class="img-fluid mt-3" src="{{ url('/images/books.jpg') }}" alt="nurse">
             </div>
         </div>
         <div class="col-md-6 col-sm-12 d-flex flex-column m-auto pt-5">
@@ -61,11 +61,11 @@
                     </div>
                     @enderror
                 </div>
-                <button class="btn bg-red text-white mt-4 w-75 text-title2" type="submit">Masuk</button>
+                <button class="btn bg-primary text-white mt-4 w-75 text-title2" type="submit">Masuk</button>
             </form>
             <p class="text-title2 text-blue"> Belum punya akun ? <a href=" {{ url('/register') }}"
                                                                     class="text-decoration-none">
-                    <span class="text-red">Daftar</span>
+                    <span class="text-primary">Daftar</span>
                 </a></p>
         </div>
     </div>

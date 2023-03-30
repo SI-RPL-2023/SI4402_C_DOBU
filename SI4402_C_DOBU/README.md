@@ -1,6 +1,6 @@
 # Tubes Web Application Development (WAD)
 
-### PERANCANGAN DAN PEMBUATAN WEBSITE GELOOD
+### PERANCANGAN DAN PEMBUATAN WEBSITE Dobu
 
 ### Kelompok 6 Gelood - SI4402
 

@@ -12,7 +12,7 @@
                                     data-toggle="collapse" data-target="#collapseFaqOne" aria-expanded="true"
                                     aria-controls="collapseFaqOne">
                                 <span><i class="fas fa-question-circle text-red"></i></span>
-                                Apa itu Gelood ?
+                                Apa itu Dobu ?
                             </button>
                         </h5>
                     </div>
@@ -20,7 +20,7 @@
                     <div id="collapseFaqOne" class="collapse show" aria-labelledby="faqOne" data-parent="#accordion">
                         <div class="card-body text-decoration-none">
                             <span><i class="fas fa-quote-right text-red"></i></span>
-                            <p class="text-title1" style="color: #0B090A">Gelood adalah sebuah platform berbasis web &
+                            <p class="text-title1" style="color: #0B090A">Dobu adalah sebuah platform berbasis web &
                                 mobile yang memudahkan seseorang untuk melakukan donor darah konvalesen yang langsung
                                 terhubung dengan Kantor Palang Merah Indonesia di setiap kota di Indonesia.</p>
 
@@ -34,7 +34,7 @@
                                     data-toggle="collapse" data-target="#collapseFaqTwo" aria-expanded="false"
                                     aria-controls="collapseFaqTwo">
                                 <span><i class="fas fa-question-circle text-red"></i></span>
-                                Apakah Gelood adalah bagian dari Palang Merah Indonesia (PMI)? ?
+                                Apakah Dobu adalah bagian dari Palang Merah Indonesia (PMI)? ?
                             </button>
                         </h5>
                     </div>
@@ -42,7 +42,7 @@
                     <div id="collapseFaqTwo" class="collapse" aria-labelledby="faqTwo" data-parent="#accordion">
                         <div class="card-body text-decoration-none">
                             <span><i class="fas fa-quote-right text-red"></i></span>
-                            <p class="text-title1" style="color: #0B090A">Iya. Gelood bergerak dan berkolaborasi
+                            <p class="text-title1" style="color: #0B090A">Iya. Dobu bergerak dan berkolaborasi
                                 bersama Palang Merah Indonesia (PMI) untuk untuk membantu orang-orang yang membutuhkan
                                 darah darah dalam proses pengobatan COVID-19 guna menurunkan lonjakan angka kematian
                                 akibat COVID-19.
@@ -106,7 +106,7 @@
                                     data-toggle="collapse" data-target="#collapseFaqFive" aria-expanded="false"
                                     aria-controls="collapseFaqFive">
                                 <span><i class="fas fa-question-circle text-red"></i></span>
-                                Siapa dibalik Gelood ?
+                                Siapa dibalik Dobu ?
                             </button>
                         </h5>
                     </div>

@@ -11,7 +11,7 @@
                 <p class="text-left text-blue text-title1 pb-2"
                    style="font-size: 50px;line-height: 30px;font-family: 'Montserrat', sans-serif;">Welcome to DOBU</p>
                 <p class="text-left text-body1 pb-2 my-2" style="max-width: 500px">“Books are the only present you can open again and again.”</p>
-                <img class="img-fluid mt-3" src="{{ url('/images/book.svg') }}" alt="nurse">
+                <img class="img-fluid mt-3" src="{{ url('/images/books.jpg') }}" alt="books">
             </div>
         </div>
         <div class="col-md-6 col-sm-12 d-flex flex-column m-auto pt-5">

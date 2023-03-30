@@ -38,7 +38,7 @@
                                 d="M6.58957 2.45232C7.88312 2.45232 9.05482 2.97724 9.90781 3.82086L7.52693 6.20175H13.1511V0.577606L11.2295 2.49919C10.039 1.30874 8.39867 0.577606 6.58957 0.577606C3.2807 0.577606 0.562369 3.02411 0.103065 6.20175H1.99653C2.42771 4.06457 4.32117 2.45232 6.58957 2.45232ZM11.8763 11.0198C12.4949 10.1761 12.9261 9.17317 13.0761 8.07646H11.1826C10.7514 10.2136 8.85798 11.8259 6.58957 11.8259C5.29602 11.8259 4.12432 11.301 3.27133 10.4573L5.65222 8.07646H0.0280762V13.7006L1.94966 11.779C3.1401 12.9695 4.78047 13.7006 6.58957 13.7006C8.04248 13.7006 9.3829 13.2225 10.4702 12.4258L15.0258 16.972L16.4224 15.5753L11.8763 11.0198Z"
                                 fill="#184EBA"/>
                         </svg>
-                            </span>Sebagai Pemohon
+                            </span>Penerima Buku
                         </h6>
                     </div>
                 </div>
@@ -65,7 +65,7 @@
                                 </div>
                             @endforeach
                         @else
-                            <p class="text-center">Belum melakukan pendaftaran request Darah</p>
+                            <p class="text-center">Belum melakukan peminjaman buku</p>
                         @endif
                     </div>
                     <hr>
@@ -86,7 +86,7 @@
     d="M23.7998 16.3333H21.2165C21.2165 14.9333 20.2477 13.6733 18.8011 13.1833L10.8444 10.5H0.549805V23.3333H8.2998V21.6533L17.3415 23.9167L27.6748 21V19.8333C27.6748 17.8967 25.944 16.3333 23.7998 16.3333ZM3.13314 21V12.8333H5.71647V21H3.13314ZM17.3027 21.4783L8.2998 19.2267V12.8333H10.3794L17.8969 15.365C18.3361 15.5167 18.6331 15.9017 18.6331 16.3333C18.6331 16.3333 16.0627 16.275 15.6623 16.1583L12.5881 15.2367L11.7744 17.4533L14.8486 18.375C15.5073 18.5733 16.1919 18.6783 16.8894 18.6783H23.7998C24.3036 18.6783 24.7556 18.9467 24.9623 19.3317L17.3027 21.4783Z"
     fill="#184EBA"/>
 </svg>
-                            </span>Sebagai Pendonor
+                            </span>Donatur Buku
                         </h6>
                     </div>
                 </div>
@@ -113,7 +113,7 @@
                                 </div>
                             @endforeach
                         @else
-                            <p class="text-center">Belum melakukan pendaftaran donor</p>
+                            <p class="text-center">Belum melakukan pendaftaran donatur buku</p>
                         @endif
                     </div>
                     <hr>
@@ -169,18 +169,16 @@
                     @enderror
                 </div>
                 <div class="form-group mb-3">
-                    <label for="blood_type_donators" class="text-title1 text-blue">Golongan Darah</label>
+                    <label for="blood_type_donators" class="text-title1 text-blue">Status</label>
                     <select
                         class="custom-select text-title1 text-blue mt-1 @error('blood_type_donators') is-invalid @enderror"
                         id="blood_type_donators" name="blood_type_donators" required>
-                        <option value="" disabled selected>Golongan Darah</option>
-                        <option value="A" {{ (auth()->user()->blood_type_donators === "A") ? 'selected' : '' }}>A
+                        <option value="" disabled selected>Status</option>
+                        <option value="Pelajar" {{ (auth()->user()->blood_type_donators === "Pelajar") ? 'selected' : '' }}>Pelajar
                         </option>
-                        <option value="B" {{ (auth()->user()->blood_type_donators === "B") ? 'selected' : '' }}>B
+                        <option value="Pekerja" {{ (auth()->user()->blood_type_donators === "Pekerja") ? 'selected' : '' }}>Pekerja
                         </option>
-                        <option value="AB" {{ (auth()->user()->blood_type_donators === "AB") ? 'selected' : '' }}>AB
-                        </option>
-                        <option value="O" {{ (auth()->user()->blood_type_donators === "O") ? 'selected' : '' }}>O
+                        <option value="Umum" {{ (auth()->user()->blood_type_donators === "Umum") ? 'selected' : '' }}>Umum
                         </option>
                     </select>
                     @error('blood_type_donators')
@@ -189,28 +187,8 @@
                     </div>
                     @enderror
                 </div>
-                <div class="form-group mb-3">
-                    <label for="rhesus_type_donators" class="text-title1 text-blue">Rhesus</label>
-                    <select
-                        class="custom-select text-title1 text-blue mt-1 @error('rhesus_type_donators') is-invalid @enderror"
-                        id="rhesus_type_donators" name="rhesus_type_donators" required>
-                        <option value="" disabled selected>Rhesus</option>
-                        <option
-                            value="positive" {{ (auth()->user()->rhesus_type_donators === "positive") ? 'selected' : '' }} >
-                            Positif (+)
-                        </option>
-                        <option
-                            value="negatif" {{ (auth()->user()->rhesus_type_donators === "negative") ? 'selected' : '' }}>
-                            Negatif (-)
-                        </option>
-                    </select>
-                    @error('rhesus_type_donators')
-                    <div class="invalid-feedback">
-                        {{ $message }}
-                    </div>
-                    @enderror
-                </div>
-                <button class="btn bg-red text-white mt-4 w-25 text-title2" type="submit">Simpan</button>
+                
+                <button class="btn bg-primary text-white mt-4 w-25 text-title2" type="submit">Simpan</button>
             </form>
         </div>
         <div class="col-md-8 offset-md-2 mt-5 pt-4">
@@ -253,7 +231,7 @@
                     </div>
                     @enderror
                 </div>
-                <button class="btn bg-red text-white mt-4 w-25 text-title2" type="submit">Simpan</button>
+                <button class="btn bg-primary text-white mt-4 w-25 text-title2" type="submit">Simpan</button>
             </form>
         </div>
         <div class="col-md-8 offset-md-2 mt-5 pt-4">
@@ -303,7 +281,7 @@
                                                                                     aria-hidden="true"></i></a>
                     </div>
                 </div>
-                <button class="btn bg-red text-white mt-4 w-25 text-title2 mb-5" type="submit">Simpan</button>
+                <button class="btn bg-primary text-white mt-4 w-25 text-title2 mb-5" type="submit">Simpan</button>
             </form>
         </div>
         @if(session()->has('updateSuccess'))
@@ -358,7 +336,7 @@
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                        <button type="submit" class="btn bg-red text-white">Simpan</button>
+                        <button type="submit" class="btn bg-primary text-white">Simpan</button>
                     </div>
                 </div>
             </form>

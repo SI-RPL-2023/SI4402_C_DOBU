@@ -37,15 +37,15 @@
         <li class="nav-item ml-2">
             <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo"
                aria-expanded="true" aria-controls="collapseTwo">
-                <img src="{{ url('/images/icon/ic_drop.svg') }}" class="img-fluid" width="24px" alt="donor">
+                <img src="{{ url('/images/icon/ic_drop.svg') }}" class="img-fluid" width="22px" alt="donor">
                 <span
-                    class="text-grey hover-underline-animation {{ ($active === "donor") ? 'active' : '' }}">Donor</span>
+                    class="text-grey hover-underline-animation {{ ($active === "donor") ? 'active' : '' }}">Donasi</span>
             </a>
             <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
                 <div class="bg-white py-2 collapse-inner rounded">
                     <h6 class="collapse-header">Jenis Layanan</h6>
-                    <a class="collapse-item" href="{{ url('/donor') }}">Donor Darah</a>
-                    <a class="collapse-item" href="{{ url('/submission') }}">Request Darah</a>
+                    <a class="collapse-item" href="{{ url('/donor') }}">Donasi Buku</a>
+                    <a class="collapse-item" href="{{ url('/submission') }}">Request Buku</a>
                 </div>
             </div>
         </li>

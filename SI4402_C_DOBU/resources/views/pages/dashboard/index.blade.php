@@ -8,7 +8,7 @@
         <div class="col-md-6 col-sm-12 mt-5">
             <div class="card mb-4" style="width: 100%;">
                 <div class="card-header py-3">
-                    <h6 class="m-0 text-title1 text-blue">Jadwal Donor Terdekat</h6>
+                    <h6 class="m-0 text-title1 text-blue">Jadwal Donasi Terdekat</h6>
                 </div>
                 <div class="card-body">
                     <div class="calendar-container"></div>
@@ -42,7 +42,7 @@
                                 </a>
                             @endforeach
                         @else
-                            <p class="text-center">Belum melakukan pendaftaran donor</p>
+                            <p class="text-center">Belum melakukan pendaftaran donasi</p>
                         @endif
 
                     </div>

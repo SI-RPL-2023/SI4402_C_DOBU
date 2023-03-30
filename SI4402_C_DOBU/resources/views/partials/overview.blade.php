@@ -41,8 +41,8 @@
                 </div>
                 <div class="col-9">
                     <p class="text-subtitle1 text-blue">Diperbarui {{ date('d/m/Y', time()) }}</p>
-                    <p class="text-title1 text-red">Stok Darah</p>
-                    <p class="text-body1 text-blue">{{ $stockPlasma }} Kantung</p>
+                    <p class="text-title1 text-red">Stok Buku</p>
+                    <p class="text-body1 text-blue">{{ $stockPlasma }} Buku</p>
                 </div>
             </div>
         </div>

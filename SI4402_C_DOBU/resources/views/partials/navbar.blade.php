@@ -37,11 +37,7 @@
         <li class="nav-item ml-2">
             <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo"
                aria-expanded="true" aria-controls="collapseTwo">
-<<<<<<< HEAD
-                <img src="{{ url('/images/icon/ic_drop.svg') }}" class="img-fluid" width="22px" alt="donor">
-=======
                 <img src="{{ url('/images/icon/book.svg') }}" class="img-fluid" width="24px" alt="donor">
->>>>>>> origin/main
                 <span
                     class="text-grey hover-underline-animation {{ ($active === "donor") ? 'active' : '' }}">Donasi</span>
             </a>
@@ -98,7 +94,7 @@
 
     <li class="nav-item m-2">
 
-        <span class="text-grey text-red" style="margin-left: 20px;font-weight: 500;">SYSTEM</span>
+        <span class="text-grey text-primary" style="margin-left: 20px;font-weight: 500;">SYSTEM</span>
 
     </li>
 

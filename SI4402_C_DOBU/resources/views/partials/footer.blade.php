@@ -1,7 +1,7 @@
 <footer class="sticky-footer bg-white">
     <div class="container my-auto">
         <div class="copyright text-center my-auto">
-            <span>Copyright &copy; DOBU.co.id | Kung-Fu</span>
+            <span>Copyright &copy; DOBU 2023</span>
         </div>
     </div>
 </footer>

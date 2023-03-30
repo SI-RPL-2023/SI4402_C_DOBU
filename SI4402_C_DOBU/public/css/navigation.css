@@ -12,7 +12,7 @@
     height: 2px;
     bottom: 0;
     left: 0;
-    background-color: #BA181B;
+    background-color: #184EBA;
     transform-origin: bottom right;
     transition: transform 0.25s ease-out;
 }
@@ -23,5 +23,5 @@
 }
 
 .active {
-    color: #BA181B;
+    color: #184EBA;
 }

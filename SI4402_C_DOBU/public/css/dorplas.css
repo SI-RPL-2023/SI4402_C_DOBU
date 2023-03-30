@@ -11,7 +11,7 @@
 }
 
 .bg-red {
-    background-color: #BA181B !important;
+    background-color: #184EBA !important;
 }
 
 .bg-red-2 {
@@ -19,7 +19,7 @@
 }
 
 .text-red {
-    color: #BA181B !important;
+    color: #184EBA !important;
 }
 
 .text-red-2 {
@@ -31,7 +31,7 @@
 }
 
 .nav-link .text-grey:hover {
-    color: #BA181B !important;
+    color: #184EBA !important;
 }
 
 .text-blue {
@@ -47,7 +47,7 @@
 
 
 .sidebar-dark .nav-item .nav-link[data-toggle="collapse"]::after {
-    color: #BA181B !important;
+    color: #184EBA !important;
 }
 
 img {
@@ -155,12 +155,12 @@ input[type=search]:focus {
 
 .bank-blood-rhesus-top {
     border-top-right-radius: 25px;
-    border-bottom: 3px solid #BA181B;
+    border-bottom: 3px solid #184EBA;
 }
 
 .bank-blood-rhesus-bottom {
     border-bottom-right-radius: 25px;
-    border-top: 3px solid #BA181B;
+    border-top: 3px solid #184EBA;
 }
 
 .photo-edit {

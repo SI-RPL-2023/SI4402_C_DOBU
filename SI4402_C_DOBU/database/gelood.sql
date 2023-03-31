@@ -292,7 +292,7 @@ CREATE TABLE `institutions` (
 --
 
 INSERT INTO `institutions` (`id_institutions`, `name_institutions`, `contact_institutions`, `email_institutions`, `address_institutions`, `longitude_institutions`, `latitude_institutions`, `created_at`, `updated_at`) VALUES
-('0264db2d-0f84-32ef-b732-d56d7b3d0493', 'PMI Jawa Barat Pusat', '(022) 2500095', 'halo@pmijabar.or.id', 'Jl. Ir. H. Juanda No.426A, Dago, Kecamatan Coblong, Kota Bandung, Jawa Barat 40135', '-6.86324723578973', '107.62146541259783', '2023-01-08 13:13:27', '2023-01-08 13:13:27'),
+('0264db2d-0f84-32ef-b732-d56d7b3d0493', 'TELKOM UNIVERSITY', '(022) 2500095', 'halo@pmijabar.or.id', 'Jl. Ir. H. Juanda No.426A, Dago, Kecamatan Coblong, Kota Bandung, Jawa Barat 40135', '-6.86324723578973', '107.62146541259783', '2023-01-08 13:13:27', '2023-01-08 13:13:27'),
 ('04c10453-6762-3a69-9cd4-fdfc043164bd', 'PMI Jawa Timur Pusat', '(031) 5055173', ' jawa_timur@pmi.or.id', 'Jl. Karang Menjangan 22 Surabaya', '-7.263475929872024', '112.76294054132508', '2023-01-08 13:13:27', '2023-01-08 13:13:27'),
 ('05993934-409e-3c74-9559-150c4cee359b', 'PMI Surabaya', '(031) 99443899', 'pmisurabaya@pmi.or.id', 'Jl. Sumatera No.71, Gubeng, Kec. Gubeng, Kota SBY, Jawa Timur 60281', '-7.270122660967294', '112.7485233269915', '2023-01-08 13:13:27', '2023-01-08 13:13:27'),
 ('05fae751-7d73-3b41-a567-44843869588f', 'Unit Tranfusi Darah Palang Merah Indonesia Kota Surabaya', '(031) 531328', 'contact.pmi@gmail.com', 'Jl. Embong Ploso No.7-15, Embong Kaliasin, Kec. Genteng, Kota SBY, Jawa Timur 60271', '-7.267914199486669', '112.74577088043364', '2023-01-08 13:13:27', '2023-01-08 13:13:27'),

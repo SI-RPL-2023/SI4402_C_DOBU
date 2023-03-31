@@ -16,7 +16,7 @@ class InstitutionsSeeder extends Seeder
     {
         Institutions::create([
             'id_institutions' => '0264db2d-0f84-32ef-b732-d56d7b3d0493',
-            'name_institutions' => 'PMI Jawa Barat Pusat',
+            'name_institutions' => 'TELKOM UNIVERSITY',
             'contact_institutions' => '(022) 2500095',
             'email_institutions' => 'halo@pmijabar.or.id',
             'address_institutions' => 'Jl. Ir. H. Juanda No.426A, Dago, Kecamatan Coblong, Kota Bandung, Jawa Barat 40135',

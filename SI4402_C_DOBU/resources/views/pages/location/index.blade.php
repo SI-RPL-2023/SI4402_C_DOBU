@@ -20,6 +20,7 @@
                 </div>
                 <div class="list-location mt-5">
                     @foreach($datas as $data)
+                    @if ($data->institutions)
                         <a class="text-decoration-none" data-toggle="modal" data-target="#detailModal" href="#"
                            onclick="btnDetail(
                                '{{$data->a_positive_blood_bank}}',
@@ -56,6 +57,7 @@
                                 </div>
                             </div>
                         </a>
+                        @endif
                     @endforeach
                 </div>
             </div>

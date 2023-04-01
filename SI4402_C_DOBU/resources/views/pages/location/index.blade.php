@@ -8,7 +8,7 @@
             <div class="col-md-6 col-sm-12 mt-5">
                 <div class="input-wrapper">
                     <form action="{{ url('/location') }}" method="GET" id="search-form">
-                        <input type="search" class="input-search rounded" placeholder="Cari PMI Terdekat" name="search"
+                        <input type="search" class="input-search rounded" placeholder="Cari DOBU" name="search"
                                id="query" autocomplete="off" value="{{ request('search') }}">
                     </form>
                     <svg xmlns="http://www.w3.org/2000/svg" class="input-icon" viewBox="0 0 20 20"
@@ -67,7 +67,7 @@
         </div>
     </div>
     <!-- Modal -->
-    <div class="modal fade" id="detailModal" tabindex="-1" aria-labelledby="detailModalLabel" aria-hidden="true">
+    <div class="modal fade" id="detailModal" tabindex="-1" aria-labelledby="detailModalLabel" aria-hidden="true"> 
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
                 <div class="modal-header">

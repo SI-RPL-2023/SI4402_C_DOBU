@@ -28,7 +28,7 @@ class InstitutionsSeeder extends Seeder
             'id_institutions' => '04c10453-6762-3a69-9cd4-fdfc043164bd',
             'name_institutions' => 'PMI Jawa Timur Pusat',
             'contact_institutions' => '(031) 5055173',
-            'email_institutions' => ' jawa_timur@pmi.or.id',
+            'email_institutions' => ' jawa_timur@pmi.or.id',
             'address_institutions' => 'Jl. Karang Menjangan 22 Surabaya',
             'longitude_institutions' => '-7.263475929872024',
             'latitude_institutions' => '112.76294054132508',

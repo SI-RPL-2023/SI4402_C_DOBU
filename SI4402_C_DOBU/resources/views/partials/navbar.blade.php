@@ -25,14 +25,14 @@
                     class="text-grey hover-underline-animation {{ ($active === "location") ? 'active' : '' }}">Lokasi</span></a>
         </li>
 
-        <li class="nav-item ml-2">
+        {{-- <li class="nav-item ml-2">
             <a class="nav-link" href="{{ url('/event') }}">
                 <img src="{{ url('/images/icon/ic_calender.svg') }}" class="img-fluid" width="18px"
                      style="margin-left: 2px;"
                      alt="acara">
                 <span class="text-grey hover-underline-animation {{ ($active === "event") ? 'active' : '' }}"
                       style="margin-left: 3px;">Event</span></a>
-        </li>
+        </li> --}}
 
         <li class="nav-item ml-2">
             <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo"
@@ -50,12 +50,12 @@
             </div>
         </li>
 
-        <li class="nav-item ml-2">
+        {{-- <li class="nav-item ml-2">
             <a class="nav-link" href="{{ url('/article') }}">
                 <img src="{{ url('/images/icon/ic_document.svg') }}" class="img-fluid" width="24px" alt="artikel">
                 <span
                     class="text-grey hover-underline-animation {{ ($active === "article") ? 'active' : '' }}">Artikel</span></a>
-        </li>
+        </li> --}}
 
     @elseif(auth()->guard('employee')->check())
         <li class="nav-item mt-5 ml-2">
@@ -108,7 +108,7 @@
         </li>
 
 
-        <li class="nav-item ml-2">
+        {{-- <li class="nav-item ml-2">
             <a class="nav-link" href="{{ url('/faq') }}">
                 <img src="{{ url('/images/icon/ic_question.svg') }}" class="img-fluid" width="22px" alt="faq">
                 <span
@@ -128,7 +128,7 @@
                 <img src="{{ url('/images/icon/ic_question.svg') }}" class="img-fluid" width="22px" alt="faq">
                 <span
                     class="text-grey hover-underline-animation {{ ($active === "faq") ? 'active' : '' }}">FAQ</span></a>
-        </li>
+        </li> --}}
 
     @endif
 
@@ -145,7 +145,7 @@
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title text-title1 text-blue" id="exampleModalLabel">Anda yakin ingin logout ?</h5>
+                    <h5 class="modal-title text-title1 text-blue" id="exampleModalLabel">Anda yakin ingin keluar ?</h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>

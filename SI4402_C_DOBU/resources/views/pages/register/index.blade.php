@@ -44,17 +44,17 @@
                     @enderror
                 </div>
                 <div class="form-group mb-3 w-75">
-                    <label for="blood_type_donators" class="text-title1 text-blue">Status</label>
+                    <label for="status_donators" class="text-title1 text-blue">Status</label>
                     <select
-                        class="custom-select text-title1 text-blue mt-1 @error('blood_type_donators') is-invalid @enderror"
-                        id="blood_type_donators" name="blood_type_donators" required>
+                        class="custom-select text-title1 text-blue mt-1 @error('status_donators') is-invalid @enderror"
+                        id="status_donators" name="status_donators" required>
                         <option value="" disabled selected>----</option>
                         <option value="Pekerja">Pekerja</option>
                         <option value="Pelajar">Pelajar</option>
                         <option value="Umum">Umum</option>
             
                     </select>
-                    @error('blood_type_donators')
+                    @error('status_donators')
                     <div class="invalid-feedback">
                         {{ $message }}
                     </div>

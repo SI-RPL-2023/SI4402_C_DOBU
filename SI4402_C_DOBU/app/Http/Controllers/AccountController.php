@@ -70,8 +70,7 @@ class AccountController extends Controller
         $validateData = $request->validate([
             'name_donators' => 'required|max:255',
             'gender_donators' => 'required|max:255',
-            'blood_type_donators' => 'required|max:255',
-            'rhesus_type_donators' => 'required|max:255',
+            'status_donators' => 'required|max:255',
         ]);
 
 

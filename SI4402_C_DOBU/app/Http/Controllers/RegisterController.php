@@ -22,7 +22,7 @@ class RegisterController extends Controller
         $validateData = $request->validate([
             'name_donators' => 'required|max:255',
             'email_donators' => 'required|email:dns|unique:donators,email_donators,NULL,id_donators',
-            'blood_type_donators' => 'required|max:255',
+            'status_donators' => 'required|max:255',
             'rhesus_type_donators' => 'required|max:255',
             'contact_donators' => 'required|max:20',
             'address_donators' => 'required',

@@ -104,7 +104,7 @@
                                 <div class="rounded px-3 mb-3 {{ $bg_condition }}">
                                     <h5 class="text-white text-title1 py-2">Menondorkan
                                         Darah
-                                        <strong>{{ auth()->user()->blood_type_donators}}{{ auth()->user()->rhesus_type_donators == 'positive' ? '+' : '-'}}</strong>
+                                        <strong>{{ auth()->user()->status_donators}}</strong>
                                         di {{ $data->institutions->name_institutions }}</h5>
                                     <div class="d-flex justify-content-between pb-3">
                                         <p class="text-white text-body1">{{ \Carbon\Carbon::parse($data->schedule_donor_notes)->translatedFormat('d-m-Y') }}</p>
@@ -169,19 +169,19 @@
                     @enderror
                 </div>
                 <div class="form-group mb-3">
-                    <label for="blood_type_donators" class="text-title1 text-blue">Status</label>
+                    <label for="status_donators" class="text-title1 text-blue">Status</label>
                     <select
-                        class="custom-select text-title1 text-blue mt-1 @error('blood_type_donators') is-invalid @enderror"
-                        id="blood_type_donators" name="blood_type_donators" required>
+                        class="custom-select text-title1 text-blue mt-1 @error('status_donators') is-invalid @enderror"
+                        id="status_donators" name="status_donators" required>
                         <option value="" disabled selected>Status</option>
-                        <option value="Pelajar" {{ (auth()->user()->blood_type_donators === "Pelajar") ? 'selected' : '' }}>Pelajar
+                        <option value="Pelajar" {{ (auth()->user()->status_donators === "Pelajar") ? 'selected' : '' }}>Pelajar
                         </option>
-                        <option value="Pekerja" {{ (auth()->user()->blood_type_donators === "Pekerja") ? 'selected' : '' }}>Pekerja
+                        <option value="Pekerja" {{ (auth()->user()->status_donators === "Pekerja") ? 'selected' : '' }}>Pekerja
                         </option>
-                        <option value="Umum" {{ (auth()->user()->blood_type_donators === "Umum") ? 'selected' : '' }}>Umum
+                        <option value="Umum" {{ (auth()->user()->status_donators === "Umum") ? 'selected' : '' }}>Umum
                         </option>
                     </select>
-                    @error('blood_type_donators')
+                    @error('status_donators')
                     <div class="invalid-feedback">
                         {{ $message }}
                     </div>

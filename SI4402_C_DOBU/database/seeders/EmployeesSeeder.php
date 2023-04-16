@@ -32,7 +32,7 @@ class EmployeesSeeder extends Seeder
             'id_employees' => Uuid::uuid4()->toString() . "\n",
             'id_institutions' => '2217c28f-d59c-3ab1-860c-d2cce27b2a9f',
             'name_employees' => '(Admin) Diyas Yakluna Baihaqi',
-            'email_employees' => 'diyasyakluna@pmi.co.id',
+            'email_employees' => 'diyasyakluna@dobu.co.id',
             'password_employees' => Hash::make(12345),
             'contact_employees' => '087772934259',
             'address_employees' => 'Jln. Isekai timur, Medan'

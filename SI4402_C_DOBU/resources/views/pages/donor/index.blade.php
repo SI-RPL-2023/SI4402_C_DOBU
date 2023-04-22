@@ -10,12 +10,11 @@
         <div class="col-md-6 col-sm-12">
             <img class="img=fluid" src="{{ url('/images/woman.png') }}" alt="Woman">
             <p class="text-title1 text-blue mt-1"
-               style="font-size: 30px;line-height: 30px;font-family: 'Montserrat', sans-serif;">Ajukan Donor</p>
-            <p class="text-title2 text-blue mt-2" style="max-width: 500px"><i>"Dia yang sehat memiliki harapan,
-                dan dia yang memiliki harapan memiliki segalanya."</i></p>
+               style="font-size: 30px;line-height: 30px;font-family: 'Montserrat', sans-serif;">Ajukan Donasi</p>
+            <p class="text-title2 text-blue mt-2" style="max-width: 500px"><i>"Donating books can be a powerful way to give someone the gift of knowledge and a new perspective on the world." <br> - Melinda Gates</i></p>
         </div>
         <div class="col-md-6 col-sm-12 d-flex flex-column my-auto pt-5">
-            <h3 class="text-blue font-bolder font-weight-bold mb-5">Form Pengajuan Donor Darah</h3>
+            <h3 class="text-blue font-bolder font-weight-bold mb-5">Form Pengajuan Donasi Buku</h3>
             <form action="/donor" method="POST">
                 @csrf
                 @if(isset($eventSelected))
@@ -26,7 +25,7 @@
                     </div>
                 @endif
                 <div class="form-group mb-3">
-                    <label for="id_institutions" class="text-title1 text-blue">Lokasi Donor Darah</label>
+                    <label for="id_institutions" class="text-title1 text-blue">Lokasi Donasi Buku</label>
                     <select
                         class="custom-select text-title1 text-blue mt-1 @error('id_institutions') is-invalid @enderror"
                         id="id_institutions" name="id_institutions"
@@ -52,7 +51,7 @@
                     @enderror
                 </div>
                 <div class="form-group mb-3">
-                    <label for="schedule_donor_notes" class="text-title1 text-blue">Jadwal Donor Darah</label>
+                    <label for="schedule_donor_notes" class="text-title1 text-blue">Jadwal Donasi Buku</label>
                     @if(isset($eventSelected))
                         <input type="hidden" name="id_donor_events" value="{{ $eventSelected->id_donor_events }}">
                         <input type="date"

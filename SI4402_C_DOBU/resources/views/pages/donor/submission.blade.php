@@ -10,12 +10,11 @@
         <div class="col-md-6 col-sm-12">
             <img class="img=fluid" src="{{ url('/images/woman.png') }}" alt="Woman">
             <p class="text-title1 text-blue mt-1"
-               style="font-size: 30px;line-height: 30px;font-family: 'Montserrat', sans-serif;">Request Darah</p>
-            <p class="text-title2 text-blue mt-2" style="max-width: 500px"><i>"Kebugaran fisik bukan hanya salah satu kunci terpenting untuk tubuh yang sehat,
-                tetapi juga dasar dari aktivitas intelektual yang dinamis dan kreatif."</i></p>
+               style="font-size: 30px;line-height: 30px;font-family: 'Montserrat', sans-serif;">Request Buku</p>
+            <p class="text-title2 text-blue mt-2" style="max-width: 500px"><i>“Satu anak, satu guru, satu buku dan satu pena dapat mengubah dunia." – Malala Yousafzai</i></p>
         </div>
         <div class="col-md-6 col-sm-12 d-flex flex-column my-auto pt-5">
-            <h3 class="text-blue font-bolder font-weight-bold mb-5">Form Permohonan Donor Darah</h3>
+            <h3 class="text-blue font-bolder font-weight-bold mb-5">Form Permohonan Request Buku</h3>
             <form action="/submission" method="POST" enctype="multipart/form-data">
                 @csrf
                 <div class="form-group mb-3">
@@ -47,48 +46,36 @@
                     @enderror
                 </div>
                 <div class="form-group mb-3">
-                    <label for="blood_type_donor_submissions" class="text-title1 text-blue">Masukkan Golongan
-                        Darah</label>
+                    <label for="book_type_donor_submissions" class="text-title1 text-blue">Masukkan Jenis Buku</label>
                     <select
-                        class="custom-select text-title1 text-blue mt-1 @error('blood_type_donor_submissions') is-invalid @enderror"
-                        id="blood_type_donor_submissions"
-                        name="blood_type_donor_submissions" required>
-                        <option value="" disabled selected>Golongan Darah</option>
-                        <option value="A">A</option>
-                        <option value="B">B</option>
-                        <option value="AB">AB</option>
-                        <option value="O">O</option>
+                        class="custom-select text-title1 text-blue mt-1 @error('book_type_donor_submissions') is-invalid @enderror"
+                        id="book_type_donor_submissions"
+                        name="book_type_donor_submissions" required>
+                        <option value="" disabled selected>Masukkan Jenis Buku</option>
+                        <option value="Novel">Novel</option>
+                        <option value="Komik">Komik</option>
+                        <option value="Biografi">Biografi</option>
+                        <option value="Karya Ilmiah">Karya Ilmiah</option>
+                        <option value="Kamus">Kamus</option>
+                        <option value="Atlas">Atlas</option>
+                        <option value="Buku Ilmiah">Buku Ilmiah</option>
+                        <option value="Majalah">Majalah</option>
+                        <option value="Dongeng">Dongeng</option>
+                        <option value="Antalogi">Antalogi</option>
                     </select>
-                    @error('blood_type_donor_submissions')
+                    @error('book_type_donor_submissions')
                     <div class="invalid-feedback">
                         {{ $message }}
                     </div>
                     @enderror
                 </div>
                 <div class="form-group mb-3">
-                    <label for="rhesus_type_donor_submissions" class="text-title1 text-blue">Masukkan Jenis
-                        Rhesus</label>
-                    <select
-                        class="custom-select text-title1 text-blue mt-1 @error('rhesus_type_donor_submissions') is-invalid @enderror"
-                        id="rhesus_type_donor_submissions"
-                        name="rhesus_type_donor_submissions" required>
-                        <option value="" disabled selected>Rhesus</option>
-                        <option value="positive">Positif (+)</option>
-                        <option value="negative">Negatif (-)</option>
-                    </select>
-                    @error('rhesus_type_donor_submissions')
-                    <div class="invalid-feedback">
-                        {{ $message }}
-                    </div>
-                    @enderror
-                </div>
-                <div class="form-group mb-3">
-                    <label for="quantity_donor_submissions" class="text-title1 text-blue">Jumlah Kantong</label>
+                    <label for="quantity_donor_submissions" class="text-title1 text-blue">Jumlah Buku</label>
                     <input type="number"
                            class="form-control mt-1 text-title1 text-blue @error('quantity_donor_submissions') is-invalid @enderror"
                            id="quantity_donor_submissions"
                            name="quantity_donor_submissions"
-                           placeholder="Masukkan Jumlah Kantung" required
+                           placeholder="Masukkan Jumlah Buku" required
                            value="{{ old('quantity_donor_submissions') }}">
                     @error('quantity_donor_submissions')
                     <div class="invalid-feedback">
@@ -97,7 +84,7 @@
                     @enderror
                 </div>
                 <div class="form-group mb-3">
-                    <label for="id_institutions" class="text-title1 text-blue">Lokasi Donor Darah</label>
+                    <label for="id_institutions" class="text-title1 text-blue">Lokasi Request Buku</label>
                     <select
                         class="custom-select text-title1 text-blue mt-1 @error('id_institutions') is-invalid @enderror"
                         id="id_institutions" name="id_institutions"
@@ -130,7 +117,7 @@
                     @enderror
                 </div>
                 <div class="form-group mb-3">
-                    <label for="letter" class="text-title1 text-blue">Surat Rujukan</label>
+                    <label for="letter" class="text-title1 text-blue">Surat Permohonan</label>
                     <div class="custom-file mt-1">
                         <input onchange="validateSize(this)" type="file"
                                accept="image/jpeg,image/gif,image/png"

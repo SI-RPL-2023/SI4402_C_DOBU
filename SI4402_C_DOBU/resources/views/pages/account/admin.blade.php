@@ -6,7 +6,7 @@
         @endif
         <div class="col-md-6 offset-md-3">
             <div class="d-flex flex-column mb-5" id="lightgallery">
-                <img src="{{ url('/images/doctor_avatar.png') }}"
+                <img src="{{ url('/images/avatar.jpg') }}"
                      class="rounded-circle mx-auto mt-5"
                      width="100px"
                      height="100px" alt="avatar">

@@ -5,7 +5,7 @@
                 <a href="{{ url('/_account') }}" class="text-decoration-none">
                     <div class="row">
                         <div class="col-md-3">
-                            <img src="{{ url('/images/doctor_avatar.png') }}"
+                            <img src="{{ url('/images/avatar.jpg') }}"
                                  class="rounded-circle" width="70px"
                                  height="70px" alt="avatar">
                         </div>

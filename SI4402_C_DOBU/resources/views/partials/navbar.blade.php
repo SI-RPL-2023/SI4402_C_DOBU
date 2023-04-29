@@ -25,14 +25,14 @@
                     class="text-grey hover-underline-animation {{ ($active === "location") ? 'active' : '' }}">Lokasi</span></a>
         </li>
 
-        {{-- <li class="nav-item ml-2">
+        <li class="nav-item ml-2">
             <a class="nav-link" href="{{ url('/event') }}">
                 <img src="{{ url('/images/icon/ic_calender.svg') }}" class="img-fluid" width="18px"
                      style="margin-left: 2px;"
                      alt="acara">
                 <span class="text-grey hover-underline-animation {{ ($active === "event") ? 'active' : '' }}"
                       style="margin-left: 3px;">Event</span></a>
-        </li> --}}
+        </li>
 
         <li class="nav-item ml-2">
             <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo"

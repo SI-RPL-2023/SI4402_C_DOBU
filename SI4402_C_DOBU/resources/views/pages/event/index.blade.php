@@ -49,11 +49,11 @@
                 <img class="img-fluid m-5 pt-1 pb-4" src="{{ url('images/doctor.svg') }}" alt="Dokter">
                 <p class="text-left m-auto text-blue text-title1 pb-2"
                    style="font-size: 30px;line-height: 30px;font-family: 'Montserrat', sans-serif;">
-                    Carilah Event Donor Di Sekitar Anda</p>
+                    Carilah Event Donasi buku di sekitar anda</p>
                 <p class="text-left pt-4 m-auto text-secondary text-title1">
-                    Kebaikan untuk kesehatan tidak berada pada satu keadaan.
-                    Berdiri untuk kebaikan dan berlari menyelamatkan orang adalah hal yang mulia.
-                    Mari temukan kebaikan dan ikuti kegiatan sebagai kontribusi kepada masyarakat.
+                    Perbanyak literasi dengan cara membaca buku.
+                    Berdiri untuk kebaikan dan berlari menyalurkan buku buku untuk anak bangsa.
+                    Mari tingkatkan literasimu dengan dobu.
                 </p>
             </div>
         </div>

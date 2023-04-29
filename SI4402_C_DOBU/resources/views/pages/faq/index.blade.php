@@ -21,8 +21,8 @@
                         <div class="card-body text-decoration-none">
                             <span><i class="fas fa-quote-right text-red"></i></span>
                             <p class="text-title1" style="color: #0B090A">Dobu adalah sebuah platform berbasis web &
-                                mobile yang memudahkan seseorang untuk melakukan donor darah konvalesen yang langsung
-                                terhubung dengan Kantor Palang Merah Indonesia di setiap kota di Indonesia.</p>
+                                mobile yang memudahkan seseorang untuk melakukan donor buku konvalesen yang langsung
+                                terhubung dengan setiap kota di Indonesia.</p>
 
                         </div>
                     </div>
@@ -34,7 +34,7 @@
                                     data-toggle="collapse" data-target="#collapseFaqTwo" aria-expanded="false"
                                     aria-controls="collapseFaqTwo">
                                 <span><i class="fas fa-question-circle text-red"></i></span>
-                                Apakah Dobu adalah bagian dari Palang Merah Indonesia (PMI)? ?
+                                Kemana Buku Buku yang didonasikan dobu?
                             </button>
                         </h5>
                     </div>
@@ -42,10 +42,9 @@
                     <div id="collapseFaqTwo" class="collapse" aria-labelledby="faqTwo" data-parent="#accordion">
                         <div class="card-body text-decoration-none">
                             <span><i class="fas fa-quote-right text-red"></i></span>
-                            <p class="text-title1" style="color: #0B090A">Iya. Dobu bergerak dan berkolaborasi
-                                bersama Palang Merah Indonesia (PMI) untuk untuk membantu orang-orang yang membutuhkan
-                                darah darah dalam proses pengobatan COVID-19 guna menurunkan lonjakan angka kematian
-                                akibat COVID-19.
+                            <p class="text-title1" style="color: #0B090A">Dobu akan melakukan donasi kepada
+                            daerah daerah yang masih sulit untuk mendapat akses kepada buku buku ataupun toko Buku
+                            seperti "gramedia" dobu akan mementingkan wilayah tersebut.
                             </p>
                         </div>
                     </div>
@@ -57,7 +56,7 @@
                                     data-toggle="collapse" data-target="#collapseFaqThree" aria-expanded="false"
                                     aria-controls="collapseFaqThree">
                                 <span><i class="fas fa-question-circle text-red"></i></span>
-                                Apakah donor darah konvalesen itu menyakitkan?
+                                Apakah donor buku di dobu sulit?
                             </button>
                         </h5>
                     </div>
@@ -65,12 +64,10 @@
                     <div id="collapseFaqThree" class="collapse" aria-labelledby="faqThree" data-parent="#accordion">
                         <div class="card-body text-decoration-none">
                             <span><i class="fas fa-quote-right text-red"></i></span>
-                            <p class="text-title1" style="color: #0B090A">Sakit yang dirasakan hanya sesaat, seperti
-                                dicubit. Takut akan jarum menjadi faktor utama yang menyebabkan banyak orang berpikir
-                                bahwa proses donor darah konvalesen akan menyakitkan. Sebagian besar calon pendonor
-                                merasa takut akan jarum, namun akhirnya merasakan proses donor darah konvalesen tidak
-                                sesakit yang dipikirkan. Kamu dapat membaca beberapa tips yang dapat dilakukan untuk
-                                membantu proses donor darah konvalesen pertama menjadi lebih nyaman.</p>
+                            <p class="text-title1" style="color: #0B090A">Tentu tidak donor buku di
+                            dobu tidak sulit, tujuan awal dari pembuatan dobu adalah agar semua masyarakat
+                            dapat melakukan donasi dengan mudah dan untuk mendorong masyarakat untuk melestarikan budaya 
+                            membaca.</p>
 
                         </div>
                     </div>
@@ -82,7 +79,7 @@
                                     data-toggle="collapse" data-target="#collapseFaqFour" aria-expanded="false"
                                     aria-controls="collapseFaqFour">
                                 <span><i class="fas fa-question-circle text-red"></i></span>
-                                Kenapa donor darah konvalesen itu penting?
+                                Kenapa donor buku itu penting?
                             </button>
                         </h5>
                     </div>
@@ -90,11 +87,10 @@
                     <div id="collapseFaqFour" class="collapse" aria-labelledby="faqFour" data-parent="#accordion">
                         <div class="card-body text-decoration-none">
                             <span><i class="fas fa-quote-right text-red"></i></span>
-                            <p class="text-title1" style="color: #0B090A">Sesuai dengan slogan dari PMI: “Mereka
-                                selamat, kita sehat”. Donor darah konvalesen dapat menyelamatkan nyawa pasien yang
-                                membutuhkan transfusi darah untuk alternatif pengobat covid. Selain menyelamatkan nyawa
-                                pasien, donor darah konvalesen juga menyehatkan pendonornya, karena membantu regenerasi
-                                sel darah baru sehingga mengurangi risiko serangan jantung, kanker dan sebagainya.</p>
+                            <p class="text-title1" style="color: #0B090A">Meningkatkan aksesibilitas pendidikan: 
+                            Dengan mendonasikan buku, kita dapat membantu meningkatkan aksesibilitas pendidikan bagi masyarakat yang mungkin 
+                            tidak mampu membeli buku baru. Buku-buku yang didonasikan bisa digunakan untuk meningkatkan kualitas pendidikan 
+                            di daerah-daerah terpencil atau di sekolah-sekolah yang kekurangan buku-buku.</p>
 
                         </div>
                     </div>
@@ -115,10 +111,12 @@
                         <div class="card-body text-decoration-none">
                             <span><i class="fas fa-quote-right text-red"></i></span>
                             <p class="text-title1 text-grey">
-                                - Aebil Taskari Rusydi <br>
+                                - Muhammad Fatih Raffiesya <br>
                                 - Diyas Yakluna Baihaqi <br>
-                                - Diandra Ridha Nurani  <br>
-                                - Magdalena Edelways Enjelina Pasaribu <br>
+                                - Muhammad Haikal Adriansyah <br>
+                                - Arthur <br>
+                                - Fandi Ahmad Setyoso <br>
+                                - Firas AL-Ghaffar Nugraha <br>
                             </p>
 
                         </div>

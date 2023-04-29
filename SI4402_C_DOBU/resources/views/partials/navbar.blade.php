@@ -108,7 +108,7 @@
         </li>
 
 
-        {{-- <li class="nav-item ml-2">
+        <li class="nav-item ml-2">
             <a class="nav-link" href="{{ url('/faq') }}">
                 <img src="{{ url('/images/icon/ic_question.svg') }}" class="img-fluid" width="22px" alt="faq">
                 <span
@@ -128,7 +128,7 @@
                 <img src="{{ url('/images/icon/ic_question.svg') }}" class="img-fluid" width="22px" alt="faq">
                 <span
                     class="text-grey hover-underline-animation {{ ($active === "faq") ? 'active' : '' }}">FAQ</span></a>
-        </li> --}}
+        </li>
 
     @endif
 

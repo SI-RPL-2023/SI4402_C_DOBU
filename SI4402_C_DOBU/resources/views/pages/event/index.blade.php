@@ -53,7 +53,7 @@
                 <p class="text-left pt-4 m-auto text-secondary text-title1">
                     Perbanyak literasi dengan cara membaca buku.
                     Berdiri untuk kebaikan dan berlari menyalurkan buku buku untuk anak bangsa.
-                    Mari tingkatkan literasimu dengan dobu.
+                    Mari tingkatkan literasimu dengan dobu!
                 </p>
             </div>
         </div>

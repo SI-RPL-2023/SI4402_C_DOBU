@@ -17,27 +17,46 @@ class ArticelSeeder extends Seeder
     {
         Articel::create([
             'id_articel' => Uuid::uuid4()->toString() . "\n",
-            'name_articel' => 'Manfaat Rutin Donor Darah',
-            'desc_articel' => 'Tahukah Anda bahwa setiap 8 detik, ada satu orang yang membutuhkan transfusi darah di Indonesia dan setiap menitnya, ada 10 orang sekarang menanti donasi donor darah? Menurut Badan Kesehatan Dunia (WHO) tahun 2015, Indonesia kekurangan jumlah produksi darah secara nasional, yaitu sekitar 500 ribu kantong tiap tahunnya. Bisa jadi kesadaran masyarakat untuk menjadi pendonor sukarela masih rendah. Padahal, banyak sekali manfaat rutin donor darah bagi kesehatan pendonornya.
-            Mental Health Foundation menyebut, donor darah dapat mengurangi stres, meningkatkan persepsi terhadap keadaan emosional yang meliputi kepuasan hidup dan kebahagiaan hidup (emotional well-being), baik untuk kesehatan tubuh, membantu menyingkirkan perasaan negatif, menciptakan rasa saling memiliki dan mengurangi perasaan kesepian (isolation).',
+            'name_articel' => 'Membantu Pendidikan dan Meningkatkan Minat Baca',
+            'desc_articel' => 'Buku adalah salah satu sumber pengetahuan yang penting untuk meningkatkan kualitas pendidikan dan membuka wawasan. Namun, tidak semua orang memiliki akses mudah ke buku, terutama bagi mereka yang kurang mampu atau tinggal di daerah terpencil. Oleh karena itu, donasi buku adalah salah satu cara yang efektif untuk membantu meningkatkan aksesibilitas buku dan membantu meningkatkan minat baca masyarakat.
+
+            Donasi buku dapat dilakukan oleh siapa saja dan dari mana saja. Buku-buku yang didonasikan bisa berupa buku pelajaran, buku fiksi, buku non-fiksi, buku anak-anak, majalah, dan lain sebagainya. Namun, penting untuk memastikan bahwa buku yang didonasikan masih dalam kondisi yang layak baca dan tidak rusak.',
         ]);
 
         Articel::create([
             'id_articel' => Uuid::uuid4()->toString() . "\n",
-            'name_articel' => 'Membantu Orang Lain Sehat, Diri Kita Menjadi Sehat',
-            'desc_articel' => 'Mengawali rangkaian kegiatan Peringatan Hari Ulang Tahun Pertambangan Dan Energi (HUT PE) ke-77, Kementerian Energi Dan Sumber Daya Mineral bekerja sama dengan PMI Provinsi DKI melaksanakan kegiatan bakti sosial donor darah. Ditargetkan akan terkumpul sebanyak 200 kantong dari kegiatan donor darah kali ini.
+            'name_articel' => 'Kegiatan yang bisa membantu memperluas akses ke literasi dan pengetahuan bagi masyarakat yang membutuhkan.',
+            'desc_articel' => 'Kegiatan donasi buku bisa dilakukan oleh individu, kelompok masyarakat, maupun lembaga sosial. Donasi buku juga dapat dilakukan melalui program-program sosial, seperti program bantuan pendidikan atau program bantuan sosial lainnya.
 
-            "Berkaitan dengan HUT PE, Kementerian ESDM melaksanakan kegiatan donor darah. Kita mentargetkan yang ikut berpartisipasi dalam kegiatan donor darah kali ini akan terkumpul sebanyak 200 kantong darah, dan yang sudah mendaftar via google form itu 147 orang dan sisanya on site,"kata Reni Febriana penanggung jawab acara Kegiatan Acara Donor Darah HUT PE 2022. Rabu (21/9).
+            Manfaat donasi buku bukan hanya bagi penerima donasi, tetapi juga bagi para donatur. Dengan berdonasi buku, donatur dapat berkontribusi pada peningkatan literasi dan pendidikan masyarakat. Selain itu, donasi buku juga dapat membantu penghematan lingkungan, karena buku-buku yang tidak terpakai dapat didaur ulang dan digunakan oleh orang lain.
             
-            Reni menambahkan, untuk mendapatkan target 200 kantong darah terkadang diperlukan pendonor melebih target kantong darah karena beberapa pendonor yang mendaftar belum tentu dapat mendonorkan darahnya karena berbagai alasan.',
+            Sementara itu, bagi penerima donasi buku, donasi buku bisa membantu memperluas pengetahuan dan meningkatkan literasi. Buku-buku yang diterima melalui donasi bisa membantu meningkatkan kemampuan membaca, menulis, serta meningkatkan pemahaman tentang berbagai macam topik.',
         ]);
 
         Articel::create([
             'id_articel' => Uuid::uuid4()->toString() . "\n",
-            'name_articel' => 'Hari Bakti PU ke-74',
-            'desc_articel' => 'Kegiatan donor darah yang difasilitasi oleh PMI Daerah Sulawesi Tengah ini, sering kali menjadi salah satu kegiatan rutin yang ditambahkan ke dalam rangkaian acara-acara besar Balai Wilayah Sungai Sulawesi III Palu. Sebab, seperti yang diketahui oleh Sobat Balai, bahwa Donor Darah tidak hanya sebagai kegiatan amal tetapi juga sangat bermanfaat bagi kesehatan tubuh. 
+            'name_articel' => 'Beberapa langkah yang dapat dilakukan dalam mengadakan acara donasi Buku',
+            'desc_articel' => 'Berikut adalah beberapa langkah yang dapat dilakukan dalam mengadakan acara donasi buku:
 
-            Donor darah merupakan upaya seseorang dalam memberikan sejumlah darahnya yang ditranfusikan kepada orang lain. Sayangnya, banyak orang takut donor darah dengan beragam alasan. Mulai dari takut jarum suntik hingga takut darahnya habis. Padahal, manfaat donor darah bagi pendonor banyak banget lho. Malahan setelah donor darah, tubuh jadi lebih fit karena produksi darah diperbaharui. Selain itu, tekanan darah jadi lebih stabil. Keuntungan juga bisa didapat bagi mereka yang kelebihan sel darah merah. Karena dengan donor darah, tubuh jadi menyeimbangkan dengan kebutuhan.',
+            Persiapan
+            Persiapan meliputi menentukan tujuan acara, mengajak dan menyusun tim, serta menyiapkan tempat pengumpulan buku. Pastikan tempat pengumpulan mudah diakses oleh masyarakat dan terlihat menarik untuk menarik perhatian lebih banyak orang.
+            
+            Promosi
+            Untuk memperoleh banyak buku, promosi menjadi hal yang penting. Gunakan media sosial, poster, atau spanduk untuk mempromosikan acara donasi buku yang diadakan. Beritahu masyarakat tentang tujuan acara dan kapan dan di mana buku dapat disumbangkan.
+            
+            Pengumpulan buku
+            Setelah promosi dilakukan, pengumpulan buku dapat dimulai. Pastikan bahwa buku yang disumbangkan dalam kondisi yang layak untuk dibaca, tidak rusak atau sobek.
+            
+            Penyortiran dan pembersihan buku
+            Setelah semua buku terkumpul, lakukan penyortiran dan pembersihan. Pisahkan buku berdasarkan kategori dan periksa apakah ada buku yang tidak layak untuk dibaca atau rusak. Buang buku yang tidak layak atau bisa digunakan sebagai daur ulang kertas.
+            
+            Distribusi buku
+            Setelah penyortiran selesai, buku dapat didistribusikan kepada pihak yang membutuhkan. Pastikan buku yang didistribusikan cocok dengan kebutuhan pihak yang menerima, seperti buku pelajaran untuk sekolah atau buku anak untuk komunitas yang lebih muda.
+            
+            Terima kasih
+            Jangan lupa untuk mengucapkan terima kasih kepada masyarakat yang telah menyumbangkan buku dan tim yang telah bekerja keras untuk mengadakan acara donasi buku.
+            
+            Dalam kesimpulan, acara donasi buku dapat menjadi cara yang efektif untuk meningkatkan literasi di masyarakat. Dengan persiapan yang baik, promosi yang efektif, dan pengumpulan buku yang tepat, acara ini dapat memberikan manfaat yang besar bagi masyarakat yang membutuhkan.',
         ]);
     }
 }

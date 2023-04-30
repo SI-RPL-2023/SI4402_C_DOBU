@@ -65,12 +65,12 @@
                     class="text-grey hover-underline-animation {{ ($active === "dashboard") ? 'active' : '' }}">Dashboard</span></a>
         </li>
 
-        <li class="nav-item ml-2">
+        <!-- <li class="nav-item ml-2">
             <a class="nav-link" href="{{ url('/_bank') }}">
                 <img src="{{ url('/images/icon/book.svg') }}" class="img-fluid" width="24px" alt="home">
                 <span
                     class="text-grey hover-underline-animation {{ ($active === "bank") ? 'active' : '' }}">Kelola Bank Buku</span></a>
-        </li>
+        </li> 
 
         <li class="nav-item ml-2">
             <a class="nav-link" href="{{ url('/_donor') }}">
@@ -89,7 +89,7 @@
                 <img src="{{ url('/images/icon/ic_event_admin.svg') }}" class="img-fluid ml-1" width="20px"
                      alt="notifikasi">
                 <span class="text-grey hover-underline-animation {{ ($active === "event") ? 'active' : '' }}">Kelola Event</span></a>
-        </li>
+        </li> -->
     @endif
 
     <li class="nav-item m-2">
@@ -145,7 +145,7 @@
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title text-title1 text-blue" id="exampleModalLabel">Anda yakin ingin keluar ?</h5>
+                    <h5 class="modal-title text-title1 text-blue" id="exampleModalLabel">Anda yakin ingin keluar?</h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>

@@ -69,19 +69,19 @@
             <a class="nav-link" href="{{ url('/_bank') }}">
                 <img src="{{ url('/images/icon/book.svg') }}" class="img-fluid" width="24px" alt="home">
                 <span
-                    class="text-grey hover-underline-animation {{ ($active === "bank") ? 'active' : '' }}">Kelola Bank Darah</span></a>
+                    class="text-grey hover-underline-animation {{ ($active === "bank") ? 'active' : '' }}">Kelola Bank Buku</span></a>
         </li>
 
         <li class="nav-item ml-2">
             <a class="nav-link" href="{{ url('/_donor') }}">
                 <img src="{{ url('/images/icon/ic_manage.svg') }}" class="img-fluid ml-1" width="20px" alt="notifikasi">
-                <span class="text-grey hover-underline-animation {{ ($active === "donor") ? 'active' : '' }}">Kelola Donor Darah</span></a>
+                <span class="text-grey hover-underline-animation {{ ($active === "donor") ? 'active' : '' }}">Kelola Donasi Buku</span></a>
         </li>
 
         <li class="nav-item ml-2">
             <a class="nav-link" href="{{ url('/_submission') }}">
                 <img src="{{ url('/images/icon/ic_manage.svg') }}" class="img-fluid ml-1" width="20px" alt="notifikasi">
-                <span class="text-grey hover-underline-animation {{ ($active === "submission") ? 'active' : '' }}">Kelola Request Darah</span></a>
+                <span class="text-grey hover-underline-animation {{ ($active === "submission") ? 'active' : '' }}">Kelola Request BUku</span></a>
         </li>
 
         <li class="nav-item ml-2">

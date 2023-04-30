@@ -123,7 +123,7 @@ class DonorNoteEmployeeController extends Controller
 
         DonorNotes::where('id_donor_notes', '=', $id)->update($validateData);
 
-        return redirect('/_donor')->with('info', "Data donor berhasil diupdate");
+        return redirect('/_donor')->with('info', "Data donasi berhasil diupdate");
     }
 
 

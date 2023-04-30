@@ -120,7 +120,7 @@ class DonorSubmissionEmployeeController extends Controller
 
         DonorSubmissions::where('id_donor_submissions', '=', $id)->update($validateData);
 
-        return redirect('/_submission')->with('info', "Data donor berhasil diupdate");
+        return redirect('/_submission')->with('info', "Data donasi berhasil diupdate");
     }
 
 

@@ -56,7 +56,7 @@
                                 <div class="rounded px-3 mb-3 {{ $bg_condition }}">
                                     <h5 class="text-white text-title1 py-2">Memohon Darah
                                         Tipe
-                                        <strong>{{ $data->blood_type_donor_submissions }}{{ $data->blood_type_donor_submissions == 'positive' ? '+' : '-'}}</strong>
+                                        <strong>{{ $data->book_type_donor_submissions }}{{ $data->book_type_donor_submissions == 'positive' ? '+' : '-'}}</strong>
                                         di {{ $data->institutions->name_institutions }}</h5>
                                     <div class="d-flex justify-content-between pb-3">
                                         <p class="text-white text-body1">{{ $data->time_used_donor_submissions ? \Carbon\Carbon::parse($data->time_used_donor_submissions)->translatedFormat('d-m-Y') :  '-' }}</p>
@@ -102,8 +102,7 @@
                                     elseif($data->status_donor_notes === 4) $bg_condition = 'bg-red-2'
                                 @endphp
                                 <div class="rounded px-3 mb-3 {{ $bg_condition }}">
-                                    <h5 class="text-white text-title1 py-2">Menondorkan
-                                        Darah
+                                    <h5 class="text-white text-title1 py-2">Mendonasikan Buku
                                         <strong>{{ auth()->user()->status_donators}}</strong>
                                         di {{ $data->institutions->name_institutions }}</h5>
                                     <div class="d-flex justify-content-between pb-3">

@@ -19,8 +19,7 @@ class CreateDonorSubmissionsTable extends Migration
             $table->foreignUuid('id_institutions');
             $table->string('recipient_donor_submissions');
             $table->string('applicant_donor_submissions');
-            $table->string('blood_type_donor_submissions');
-            $table->string('rhesus_type_donor_submissions');
+            $table->string('book_type_donor_submissions');
             $table->integer('quantity_donor_submissions');
             $table->dateTime('time_used_donor_submissions')->nullable();
             $table->string('ktp_donor_submissions');

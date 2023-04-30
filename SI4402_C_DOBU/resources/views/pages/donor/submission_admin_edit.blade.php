@@ -39,11 +39,11 @@
                            readonly>
                 </div>
                 <div class="form-group mb-3">
-                    <label for="blood_type_donor_submissions" class="text-title1 text-blue">Golongan Darah</label>
+                    <label for="book_type_donor_submissions" class="text-title1 text-blue">Golongan Darah</label>
                     <input type="text"
                            class="form-control mt-1 text-title1 text-blue "
-                           id="blood_type_donor_submissions"
-                           placeholder="Golongan Darah" required value="{{ $data->blood_type_donor_submissions  }}"
+                           id="book_type_donor_submissions"
+                           placeholder="Golongan Darah" required value="{{ $data->book_type_donor_submissions  }}"
                            readonly>
                 </div>
                 <div class="form-group mb-3">

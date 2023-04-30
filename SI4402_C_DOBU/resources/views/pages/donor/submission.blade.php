@@ -55,10 +55,9 @@
                         <option value="Novel">Novel</option>
                         <option value="Komik">Komik</option>
                         <option value="Biografi">Biografi</option>
-                        <option value="Karya Ilmiah">Karya Ilmiah</option>
+                        <option value="Ilmiah">Ilmiah</option>
                         <option value="Kamus">Kamus</option>
                         <option value="Atlas">Atlas</option>
-                        <option value="Buku Ilmiah">Buku Ilmiah</option>
                         <option value="Majalah">Majalah</option>
                         <option value="Dongeng">Dongeng</option>
                         <option value="Antalogi">Antalogi</option>

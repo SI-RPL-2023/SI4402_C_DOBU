@@ -32,8 +32,7 @@ class DonorSubmissionController extends Controller
         $validateData = $request->validate([
             'recipient_donor_submissions' => 'required|max:255',
             'applicant_donor_submissions' => 'required|max:255',
-            'blood_type_donor_submissions' => 'required|max:2',
-            'rhesus_type_donor_submissions' => 'required|max:255',
+            'book_type_donor_submissions' => 'required|max:10',
             'quantity_donor_submissions' => 'required|max:255',
             'id_institutions' => 'required|max:255',
             'ktp_donor_submissions' => 'required|mimes:jpeg,png,jpg,gif,svg',
@@ -63,6 +62,6 @@ class DonorSubmissionController extends Controller
         DonorSubmissions::create($validateData);
 
 
-        return redirect('/submission')->with('submissionSuccess', 'Berhasil Request Plasma');
+        return redirect('/submission')->with('submissionSuccess', 'Berhasil Request Buku Di DOBU');
     }
 }

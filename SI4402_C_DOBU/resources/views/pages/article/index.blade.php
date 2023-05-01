@@ -12,7 +12,7 @@
                     <img src="{{ $data->thumbnail_articel ?? url('https://source.unsplash.com/350x200?blood') }}" class="card-img-top" alt="...">
                     <div class="card-body">
                         <h5 class="card-title">{{ $data->name_articel }}</h5>
-                        <a href="#" class="text-decoration-none" data-toggle="modal" data-target="#detailModal{{$loop->index}}">Selengkapnya</a>
+                        <a href="#" class="text-decoration-none" data-toggle="modal" data-target="#detailModal{{$loop->index}}">Lihat Selengkapnya</a>
                     </div>
                     <div class="card-footer">
                         <small class="text-muted">Last updated 3 mins ago</small>

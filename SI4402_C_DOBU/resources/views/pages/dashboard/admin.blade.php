@@ -5,13 +5,13 @@
         @include('partials.overview')
         <div class="col-md-6 col-sm-12">
             <div class="d-flex flex-column ">
-                <h3 class="text-blue font-weight-bold mt-5 pt-5 text-center m-auto">Data Pendonor Buku</h3>
+                <h3 class="text-blue font-weight-bold mt-5 pt-5 text-center m-auto">Data Pendonor Buku Dobu</h3>
                 <div id='donorNotesChart' class="m-auto"></div>
             </div>
         </div>
         <div class="col-md-6 col-sm-12">
             <div class="d-flex flex-column ">
-                <h3 class="text-blue font-weight-bold mt-5 pt-5 text-center m-auto">Data Request Donor Buku</h3>
+                <h3 class="text-blue font-weight-bold mt-5 pt-5 text-center m-auto">Data Request Donor Buku Dobu</h3>
                 <div id='donorSubmissionsChart' class="m-auto"></div>
             </div>
         </div>

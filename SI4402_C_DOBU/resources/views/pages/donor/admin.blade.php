@@ -9,8 +9,8 @@
                 <thead>
                 <tr>
                     <th>No.</th>
-                    <th>Nama Client</th>
-                    <th>Nama Acara</th>
+                    <th>Nama Penerima</th>
+                    <th>Event DOBU</th>
                     <th>Status</th>
                     <th>Jadwal</th>
                     <th>Pengubah Terakhir</th>

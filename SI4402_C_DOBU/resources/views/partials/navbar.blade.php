@@ -65,7 +65,7 @@
                     class="text-grey hover-underline-animation {{ ($active === "dashboard") ? 'active' : '' }}">Dashboard</span></a>
         </li>
 
-        <!-- <li class="nav-item ml-2">
+        <li class="nav-item ml-2">
             <a class="nav-link" href="{{ url('/_bank') }}">
                 <img src="{{ url('/images/icon/book.svg') }}" class="img-fluid" width="24px" alt="home">
                 <span
@@ -89,7 +89,7 @@
                 <img src="{{ url('/images/icon/ic_event_admin.svg') }}" class="img-fluid ml-1" width="20px"
                      alt="notifikasi">
                 <span class="text-grey hover-underline-animation {{ ($active === "event") ? 'active' : '' }}">Kelola Event</span></a>
-        </li> -->
+        </li>
     @endif
 
     <li class="nav-item m-2">

@@ -9,7 +9,7 @@
                 <thead>
                 <tr>
                     <th>No.</th>
-                    <th>Nama Pendonor</th>
+                    <th>Nama Client</th>
                     <th>Nama Acara</th>
                     <th>Status</th>
                     <th>Jadwal</th>

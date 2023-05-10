@@ -3,8 +3,9 @@
 namespace App\Http\Controllers;
 
 
-use App\Models\BloodBank;
+use App\Models\BookBank;
 use App\Models\DonorNotes;
+use App\Models\DonorSubmissions;
 use GuzzleHttp\Client;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\DB;
@@ -21,6 +22,8 @@ class DashboardController extends Controller
         return view('pages.dashboard.index', [
             'title' => 'Dashboard',
             'active' => 'dashboard',
+            'donorNotes' => $this->donorNotes(),
+            'donorSubmissions' => $this->donorSubmissions(),
             'stockPlasma' => $this->stockPlasma(),
             'totalRequest' => $this->requestPlasma(),
             'schedules' => $this->schedule(),
@@ -35,15 +38,15 @@ class DashboardController extends Controller
 
     public function stockPlasma()
     {
-        $bloodBank = BloodBank::all();
-        $ap = $bloodBank->sum('a_positive_blood_bank');
-        $an = $bloodBank->sum('a_negative_blood_bank');
-        $abp = $bloodBank->sum('ab_positive_blood_bank');
-        $abn = $bloodBank->sum('ab_negative_blood_bank');
-        $bp = $bloodBank->sum('b_positive_blood_bank');
-        $bn = $bloodBank->sum('b_negative_blood_bank');
-        $op = $bloodBank->sum('o_positive_blood_bank');
-        $on = $bloodBank->sum('o_negative_blood_bank');
+        $bookBank = BookBank::all();
+        $ap = $bookBank->sum('Novel');
+        $an = $bookBank->sum('Komik');
+        $abp = $bookBank->sum('Kamus');
+        $abn = $bookBank->sum('Atlas');
+        $bp = $bookBank->sum('Biografi');
+        $bn = $bookBank->sum('Ilmiah');
+        $op = $bookBank->sum('Majalah');
+        $on = $bookBank->sum('Dongeng');
 
         return $ap + $an + $abp + $abn + $bp + $bn + $op + $on;
     }
@@ -74,5 +77,17 @@ class DashboardController extends Controller
 
     public function home(){
         return view('home');
+    }
+
+    public function donorSubmissions()
+    {
+        $idDonators = Auth::check() ? Auth::id() : true;
+        return DonorSubmissions::where('id_donators', '=', $idDonators)->get();
+    }
+
+    public function donorNotes()
+    {
+        $idDonators = Auth::check() ? Auth::id() : true;
+        return DonorNotes::where('id_donators', '=', $idDonators)->get();
     }
 }

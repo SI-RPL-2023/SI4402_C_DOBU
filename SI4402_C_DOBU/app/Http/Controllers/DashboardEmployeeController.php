@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\BloodBank;
+use App\Models\BookBank;
 use App\Models\DonorNotes;
 use App\Models\DonorSubmissions;
 use Illuminate\Support\Facades\Auth;
@@ -29,15 +29,15 @@ class DashboardEmployeeController extends Controller
 
     public function stockPlasma()
     {
-        $bloodBank = BloodBank::where('id_institutions', '=', Auth::user()->id_institutions);
-        $ap = $bloodBank->sum('a_positive_blood_bank');
-        $an = $bloodBank->sum('a_negative_blood_bank');
-        $abp = $bloodBank->sum('ab_positive_blood_bank');
-        $abn = $bloodBank->sum('ab_negative_blood_bank');
-        $bp = $bloodBank->sum('b_positive_blood_bank');
-        $bn = $bloodBank->sum('b_negative_blood_bank');
-        $op = $bloodBank->sum('o_positive_blood_bank');
-        $on = $bloodBank->sum('o_negative_blood_bank');
+        $bookBank = BookBank::where('id_institutions', '=', Auth::user()->id_institutions);
+        $ap = $bookBank->sum('Novel');
+        $an = $bookBank->sum('Komik');
+        $abp = $bookBank->sum('Kamus');
+        $abn = $bookBank->sum('Atlas');
+        $bp = $bookBank->sum('Biografi');
+        $bn = $bookBank->sum('Ilmiah');
+        $op = $bookBank->sum('Majalah');
+        $on = $bookBank->sum('Dongeng');
 
         return $ap + $an + $abp + $abn + $bp + $bn + $op + $on;
     }

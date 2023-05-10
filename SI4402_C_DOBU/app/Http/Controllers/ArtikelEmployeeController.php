@@ -17,30 +17,20 @@ class ArtikelEmployeeController extends Controller
     public function index()
     {
         return view('pages.artikel.admin', [
-            'title' => 'Artikel',
+            'title' => 'Acara',
             'active' => 'artikel',
         ]);
     }
 
     public function data()
     {
-        $model = Artikel::where("id_artikel", "=", Auth::user()->id_institutions)->get();
+        $model = Artikel::where("id_institutions", "=", Auth::user()->id_institutions)->get();
 
         return DataTables::of($model)
             ->addIndexColumn()
             ->addColumn('thumbnail_artikel', function ($model) {
                 return '<img src="' . $model->thumbnail_artikel . '" height="100px">';
             })
-            // ->addColumn('date_artikel', function ($model) {
-            //     $start = Carbon::parse($model->start_date_artikel)->translatedFormat("d/m/Y");
-            //     $end = Carbon::parse($model->end_date_artikel)->translatedFormat("d/m/Y");
-            //     return "$start - $end";
-            // })
-            // ->addColumn('time_artikel', function ($model) {
-            //     $start = Carbon::parse($model->start_time_artikel)->translatedFormat("h:i");
-            //     $end = Carbon::parse($model->end_time_artikel)->translatedFormat("h:i");
-            //     return "$start - $end";
-            // })
             ->addColumn('modified_by', function ($model) {
                 if ($model->modified_by == null) {
                     return "-";
@@ -57,7 +47,7 @@ class ArtikelEmployeeController extends Controller
     public function create()
     {
         return view('pages.artikel.admin_create', [
-            'title' => 'Artikel',
+            'title' => 'Acara',
             'active' => 'artikel',
         ]);
     }
@@ -67,20 +57,15 @@ class ArtikelEmployeeController extends Controller
     {
         $validateData = $request->validate([
             'name_artikel' => 'required|max:255',
-            // 'start_date_artikel' => 'required|max:255|before:end_date_artikel',
-            // 'end_date_artikel' => 'required|max:255|after:start_date_artikel',
-            // 'start_time_artikel' => 'required|max:255',
-            // 'end_time_artikel' => 'required|max:255',
             'desc_artikel' => 'required',
             'thumbnail_artikel' => 'mimes:jpeg,png,jpg,gif,svg',
-            // 'point_artikel' => 'required|max:255',
         ]);
 
         if ($request->thumbnail_artikel != null) {
             $thumbnailFile = $request->file('thumbnail_artikel');
 
-            // $uuidShorten = str_replace('-', '', Auth::user()->id_institutions);
-            // $thumbnailName = time() . "_" . $uuidShorten . "_" . $thumbnailFile->getClientOriginalName();
+            $uuidShorten = str_replace('-', '', Auth::user()->id_institutions);
+            $thumbnailName = time() . "_" . $uuidShorten . "_" . $thumbnailFile->getClientOriginalName();
 
             $thumbnailPath = "upload/$uuidShorten/thumbnail";
             $thumbnailFile->move($thumbnailPath, $thumbnailName);
@@ -88,11 +73,11 @@ class ArtikelEmployeeController extends Controller
         }
 
         $validateData['id_artikel'] = Uuid::uuid4()->toString() . "\n";
-        // $validateData['id_institutions'] = Auth::user()->id_institutions;
+        $validateData['id_institutions'] = Auth::user()->id_institutions;
 
         Artikel::create($validateData);
 
-        return redirect('/_artikel')->with('info', 'Artikel berhasil ditambahkan');
+        return redirect('/_artikel')->with('info', 'Acara berhasil ditambahkan');
     }
 
 
@@ -104,9 +89,9 @@ class ArtikelEmployeeController extends Controller
 
     public function edit($id)
     {
-        $data = artikel::find($id);
+        $data = Artikel::find($id);
         return view('pages.artikel.admin_edit', [
-            'title' => 'Artikel',
+            'title' => 'Acara',
             'active' => 'artikel',
             'data' => $data
         ]);
@@ -141,7 +126,7 @@ class ArtikelEmployeeController extends Controller
 
         Artikel::where('id_artikel', '=', $id)->update($validateData);
 
-        return redirect('/_artikel')->with('info', "Artikel berhasil diupdate");
+        return redirect('/_artikel')->with('info', "Acara berhasil diupdate");
     }
 
     public function destroy($id)
@@ -152,9 +137,9 @@ class ArtikelEmployeeController extends Controller
             if (File::exists(public_path($data->thumbnail_artikel))) {
                 File::delete(public_path($data->thumbnail_artikel));
             }
-            return redirect('/_artikel')->with('info', "Artikel berhasil dihapus");
+            return redirect('/_artikel')->with('info', "Acara berhasil dihapus");
         } catch (Exception $e) {
-            return redirect('/_artikel')->with('info', "Artikel gagal dihapus");
+            return redirect('/_artikel')->with('info', "Acara gagal dihapus");
         }
     }
 }

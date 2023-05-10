@@ -15,20 +15,20 @@
                     </button>
                 </div>
             @endif
-            <h3 class="text-blue font-weight-bold mt-5">Stok Bank Darah</h3>
-            <small>Pengubah Terakhir : {{ $bloodBank[0]->modified_by ?? "-" }}</small>
+            <h3 class="text-blue font-weight-bold mt-5">Stok Bank Buku</h3>
+            <small>Pengubah Terakhir : {{ $bookBank[0]->modified_by ?? "-" }}</small>
             <form action="{{ url('/_bank') }}" method="POST" class="mt-4">
                 @csrf
                 @method("PUT")
                 <div class="row">
                     <div class="col-md-6 col-sm-12">
                         <div class="form-group mb-3">
-                            <label for="a_positive_blood_bank" class="text-title1 text-blue">A (+)</label>
+                            <label for="Novel" class="text-title1 text-blue">Novel</label>
                             <input type="text"
-                                   class="form-control mt-1 text-title1 text-blue w-50 @error('a_positive_blood_bank') is-invalid @enderror"
-                                   id="a_positive_blood_bank" name="a_positive_blood_bank"
-                                   placeholder="Jumlah" required value="{{ $bloodBank[0]->a_positive_blood_bank }}">
-                            @error('a_positive_blood_bank')
+                                   class="form-control mt-1 text-title1 text-blue w-50 @error('Novel') is-invalid @enderror"
+                                   id="Novel" name="Novel"
+                                   placeholder="Jumlah" required value="{{ $bookBank[0]->Novel }}">
+                            @error('Novel')
                             <div class="invalid-feedback">
                                 {{ $message }}
                             </div>
@@ -37,12 +37,12 @@
                     </div>
                     <div class="col-md-6 col-sm-12">
                         <div class="form-group mb-3">
-                            <label for="a_negative_blood_bank" class="text-title1 text-blue">A (-)</label>
+                            <label for="Komik" class="text-title1 text-blue">Komik</label>
                             <input type="text"
-                                   class="form-control mt-1 text-title1 text-blue w-50 @error('a_negative_blood_bank') is-invalid @enderror"
-                                   id="a_negative_blood_bank" name="a_negative_blood_bank"
-                                   placeholder="Jumlah" required value="{{ $bloodBank[0]->a_negative_blood_bank }}">
-                            @error('a_negative_blood_bank')
+                                   class="form-control mt-1 text-title1 text-blue w-50 @error('Komik') is-invalid @enderror"
+                                   id="Komik" name="Komik"
+                                   placeholder="Jumlah" required value="{{ $bookBank[0]->Komik }}">
+                            @error('Komik')
                             <div class="invalid-feedback">
                                 {{ $message }}
                             </div>
@@ -51,12 +51,12 @@
                     </div>
                     <div class="col-md-6 col-sm-12">
                         <div class="form-group mb-3">
-                            <label for="ab_positive_blood_bank" class="text-title1 text-blue">AB (+)</label>
+                            <label for="Kamus" class="text-title1 text-blue">Biografi</label>
                             <input type="text"
-                                   class="form-control mt-1 text-title1 text-blue w-50 @error('ab_positive_blood_bank') is-invalid @enderror"
-                                   id="ab_positive_blood_bank" name="ab_positive_blood_bank"
-                                   placeholder="Jumlah" required value="{{ $bloodBank[0]->ab_positive_blood_bank }}">
-                            @error('ab_positive_blood_bank')
+                                   class="form-control mt-1 text-title1 text-blue w-50 @error('Kamus') is-invalid @enderror"
+                                   id="Kamus" name="Kamus"
+                                   placeholder="Jumlah" required value="{{ $bookBank[0]->Kamus }}">
+                            @error('Kamus')
                             <div class="invalid-feedback">
                                 {{ $message }}
                             </div>
@@ -65,12 +65,12 @@
                     </div>
                     <div class="col-md-6 col-sm-12">
                         <div class="form-group mb-3">
-                            <label for="ab_negative_blood_bank" class="text-title1 text-blue">AB (-)</label>
+                            <label for="Atlas" class="text-title1 text-blue">Ilmiah</label>
                             <input type="text"
-                                   class="form-control mt-1 text-title1 text-blue w-50 @error('ab_negative_blood_bank') is-invalid @enderror"
-                                   id="ab_negative_blood_bank" name="ab_negative_blood_bank"
-                                   placeholder="Jumlah" required value="{{ $bloodBank[0]->ab_negative_blood_bank }}">
-                            @error('ab_negative_blood_bank')
+                                   class="form-control mt-1 text-title1 text-blue w-50 @error('Atlas') is-invalid @enderror"
+                                   id="Atlas" name="Atlas"
+                                   placeholder="Jumlah" required value="{{ $bookBank[0]->Atlas }}">
+                            @error('Atlas')
                             <div class="invalid-feedback">
                                 {{ $message }}
                             </div>
@@ -79,12 +79,12 @@
                     </div>
                     <div class="col-md-6 col-sm-12">
                         <div class="form-group mb-3">
-                            <label for="b_positive_blood_bank" class="text-title1 text-blue">B (+)</label>
+                            <label for="Biografi" class="text-title1 text-blue">Kamus</label>
                             <input type="text"
-                                   class="form-control mt-1 text-title1 text-blue w-50 @error('b_positive_blood_bank') is-invalid @enderror"
-                                   id="b_positive_blood_bank" name="b_positive_blood_bank"
-                                   placeholder="Jumlah" required value="{{ $bloodBank[0]->b_positive_blood_bank }}">
-                            @error('b_positive_blood_bank')
+                                   class="form-control mt-1 text-title1 text-blue w-50 @error('Biografi') is-invalid @enderror"
+                                   id="Biografi" name="Biografi"
+                                   placeholder="Jumlah" required value="{{ $bookBank[0]->Biografi }}">
+                            @error('Biografi')
                             <div class="invalid-feedback">
                                 {{ $message }}
                             </div>
@@ -93,12 +93,12 @@
                     </div>
                     <div class="col-md-6 col-sm-12">
                         <div class="form-group mb-3">
-                            <label for="b_negative_blood_bank" class="text-title1 text-blue">B (-)</label>
+                            <label for="Ilmiah" class="text-title1 text-blue">Atlas</label>
                             <input type="text"
-                                   class="form-control mt-1 text-title1 text-blue w-50 @error('b_negative_blood_bank') is-invalid @enderror"
-                                   id="b_negative_blood_bank" name="b_negative_blood_bank"
-                                   placeholder="Jumlah" required value="{{ $bloodBank[0]->b_negative_blood_bank }}">
-                            @error('b_negative_blood_bank')
+                                   class="form-control mt-1 text-title1 text-blue w-50 @error('Ilmiah') is-invalid @enderror"
+                                   id="Ilmiah" name="Ilmiah"
+                                   placeholder="Jumlah" required value="{{ $bookBank[0]->Ilmiah }}">
+                            @error('Ilmiah')
                             <div class="invalid-feedback">
                                 {{ $message }}
                             </div>
@@ -107,12 +107,12 @@
                     </div>
                     <div class="col-md-6 col-sm-12">
                         <div class="form-group mb-3">
-                            <label for="o_positive_blood_bank" class="text-title1 text-blue">O (+)</label>
+                            <label for="Majalah" class="text-title1 text-blue">Majalah</label>
                             <input type="text"
-                                   class="form-control mt-1 text-title1 text-blue w-50 @error('o_positive_blood_bank') is-invalid @enderror"
-                                   id="o_positive_blood_bank" name="o_positive_blood_bank"
-                                   placeholder="Jumlah" required value="{{ $bloodBank[0]->o_positive_blood_bank }}">
-                            @error('o_positive_blood_bank')
+                                   class="form-control mt-1 text-title1 text-blue w-50 @error('Majalah') is-invalid @enderror"
+                                   id="Majalah" name="Majalah"
+                                   placeholder="Jumlah" required value="{{ $bookBank[0]->Majalah }}">
+                            @error('Majalah')
                             <div class="invalid-feedback">
                                 {{ $message }}
                             </div>
@@ -121,12 +121,12 @@
                     </div>
                     <div class="col-md-6 col-sm-12">
                         <div class="form-group mb-3">
-                            <label for="o_negative_blood_bank" class="text-title1 text-blue">O (-)</label>
+                            <label for="Dongeng" class="text-title1 text-blue">Dongeng</label>
                             <input type="text"
-                                   class="form-control mt-1 text-title1 text-blue w-50 @error('o_positive_blood_bank') is-invalid @enderror"
-                                   id="o_negative_blood_bank" name="o_negative_blood_bank"
-                                   placeholder="Jumlah" required value="{{ $bloodBank[0]->o_negative_blood_bank }}">
-                            @error('o_negative_blood_bank')
+                                   class="form-control mt-1 text-title1 text-blue w-50 @error('Majalah') is-invalid @enderror"
+                                   id="Dongeng" name="Dongeng"
+                                   placeholder="Jumlah" required value="{{ $bookBank[0]->Dongeng }}">
+                            @error('Dongeng')
                             <div class="invalid-feedback">
                                 {{ $message }}
                             </div>

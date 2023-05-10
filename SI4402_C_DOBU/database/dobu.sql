@@ -79,40 +79,40 @@ INSERT INTO `ARTIKEL` (
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `blood_bank`
+-- Struktur dari tabel `book_bank`
 --
 
-CREATE TABLE `BLOOD_BANK` (
-  `ID_BLOOD_BANK` CHAR(36) COLLATE UTF8MB4_UNICODE_CI NOT NULL,
+CREATE TABLE `book_bank` (
+  `ID_book_bank` CHAR(36) COLLATE UTF8MB4_UNICODE_CI NOT NULL,
   `ID_INSTITUTIONS` CHAR(36) COLLATE UTF8MB4_UNICODE_CI NOT NULL,
-  `A_POSITIVE_BLOOD_BANK` INT(11) NOT NULL,
-  `A_NEGATIVE_BLOOD_BANK` INT(11) NOT NULL,
-  `B_POSITIVE_BLOOD_BANK` INT(11) NOT NULL,
-  `B_NEGATIVE_BLOOD_BANK` INT(11) NOT NULL,
-  `AB_POSITIVE_BLOOD_BANK` INT(11) NOT NULL,
-  `AB_NEGATIVE_BLOOD_BANK` INT(11) NOT NULL,
-  `O_POSITIVE_BLOOD_BANK` INT(11) NOT NULL,
-  `O_NEGATIVE_BLOOD_BANK` INT(11) NOT NULL,
+  `Novel` INT(11) NOT NULL,
+  `Komik` INT(11) NOT NULL,
+  `Biografi` INT(11) NOT NULL,
+  `Ilmiah` INT(11) NOT NULL,
+  `Kamus` INT(11) NOT NULL,
+  `Atlas` INT(11) NOT NULL,
+  `Majalah` INT(11) NOT NULL,
+  `Dongeng` INT(11) NOT NULL,
   `MODIFIED_BY` VARCHAR(255) COLLATE UTF8MB4_UNICODE_CI DEFAULT NULL,
   `CREATED_AT` TIMESTAMP NULL DEFAULT NULL,
   `UPDATED_AT` TIMESTAMP NULL DEFAULT NULL
 ) ENGINE=INNODB DEFAULT CHARSET=UTF8MB4 COLLATE=UTF8MB4_UNICODE_CI;
 
 --
--- Dumping data untuk tabel `blood_bank`
+-- Dumping data untuk tabel `book_bank`
 --
 
-INSERT INTO `BLOOD_BANK` (
-  `ID_BLOOD_BANK`,
+INSERT INTO `book_bank` (
+  `ID_book_bank`,
   `ID_INSTITUTIONS`,
-  `A_POSITIVE_BLOOD_BANK`,
-  `A_NEGATIVE_BLOOD_BANK`,
-  `B_POSITIVE_BLOOD_BANK`,
-  `B_NEGATIVE_BLOOD_BANK`,
-  `AB_POSITIVE_BLOOD_BANK`,
-  `AB_NEGATIVE_BLOOD_BANK`,
-  `O_POSITIVE_BLOOD_BANK`,
-  `O_NEGATIVE_BLOOD_BANK`,
+  `Novel`,
+  `Komik`,
+  `Biografi`,
+  `Ilmiah`,
+  `Kamus`,
+  `Atlas`,
+  `Majalah`,
+  `Dongeng`,
   `MODIFIED_BY`,
   `CREATED_AT`,
   `UPDATED_AT`
@@ -1499,9 +1499,9 @@ CREATE TABLE `USERS` (
 ALTER TABLE `ARTIKEL` ADD PRIMARY KEY (`ID_ARTIKEL`);
 
 --
--- Indeks untuk tabel `blood_bank`
+-- Indeks untuk tabel `book_bank`
 --
-ALTER TABLE `BLOOD_BANK` ADD PRIMARY KEY (`ID_BLOOD_BANK`);
+ALTER TABLE `book_bank` ADD PRIMARY KEY (`ID_book_bank`);
 
 --
 -- Indeks untuk tabel `donators`

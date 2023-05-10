@@ -13,17 +13,17 @@ class CreateBloodBankTable extends Migration
      */
     public function up()
     {
-        Schema::create('blood_bank', function (Blueprint $table) {
-            $table->uuid('id_blood_bank')->unique()->primary();;
+        Schema::create('book_bank', function (Blueprint $table) {
+            $table->uuid('id_book_bank')->unique()->primary();;
             $table->foreignUuid('id_institutions');
-            $table->integer('a_positive_blood_bank');
-            $table->integer('a_negative_blood_bank');
-            $table->integer('b_positive_blood_bank');
-            $table->integer('b_negative_blood_bank');
-            $table->integer('ab_positive_blood_bank');
-            $table->integer('ab_negative_blood_bank');
-            $table->integer('o_positive_blood_bank');
-            $table->integer('o_negative_blood_bank');
+            $table->integer('Novel');
+            $table->integer('Komik');
+            $table->integer('Biografi');
+            $table->integer('Ilmiah');
+            $table->integer('Kamus');
+            $table->integer('Atlas');
+            $table->integer('Majalah');
+            $table->integer('Dongeng');
             $table->string('modified_by')->nullable();
             $table->timestamps();
         });
@@ -36,6 +36,6 @@ class CreateBloodBankTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('blood_bank');
+        Schema::dropIfExists('book_bank');
     }
 }

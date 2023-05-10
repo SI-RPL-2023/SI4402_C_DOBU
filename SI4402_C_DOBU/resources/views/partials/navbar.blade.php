@@ -63,7 +63,7 @@
                      style="margin-left: 2px;"
                      alt="acara">
                 <span class="text-grey hover-underline-animation {{ ($active === "artikel") ? 'active' : '' }}"
-                      style="margin-left: 3px;">Artikell</span></a>
+                      style="margin-left: 3px;">Artikel</span></a>
         </li>
 
     @elseif(auth()->guard('employee')->check())
@@ -90,7 +90,7 @@
         <li class="nav-item ml-2">
             <a class="nav-link" href="{{ url('/_submission') }}">
                 <img src="{{ url('/images/icon/ic_manage.svg') }}" class="img-fluid ml-1" width="20px" alt="notifikasi">
-                <span class="text-grey hover-underline-animation {{ ($active === "submission") ? 'active' : '' }}">Kelola Request BUku</span></a>
+                <span class="text-grey hover-underline-animation {{ ($active === "submission") ? 'active' : '' }}">Kelola Request Buku</span></a>
         </li>
 
         <li class="nav-item ml-2">
@@ -101,10 +101,12 @@
         </li>
 
         <li class="nav-item ml-2">
-            <a class="nav-link" href="{{ url('/_donor') }}">
-                <img src="{{ url('/images/icon/ic_document.svg') }}" class="img-fluid" width="24px" alt="artikel">
-                <span
-                    class="text-grey hover-underline-animation {{ ($active === "artikel") ? 'active' : '' }}">Kelola Artikel</span></a>
+            <a class="nav-link" href="{{ url('/_artikel') }}">
+                <img src="{{ url('/images/icon/ic_calender.svg') }}" class="img-fluid" width="18px"
+                     style="margin-left: 2px;"
+                     alt="acara">
+                <span class="text-grey hover-underline-animation {{ ($active === "artikel") ? 'active' : '' }}"
+                      style="margin-left: 3px;">Kelola Artikel</span></a>
         </li>
     @endif
 

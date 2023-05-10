@@ -27,7 +27,7 @@
 
             </div>
         </div>
-        <div class="col-md-6 col-sm-12">
+        <!-- <div class="col-md-6 col-sm-12">
             <div class="card mb-4 mx-auto" style="width: 100%;">
                 <div class="card-header py-3">
                     <div class="d-flex">
@@ -54,7 +54,7 @@
                                     elseif($data->status_donor_submissions === 4) $bg_condition = 'bg-red-2'
                                 @endphp
                                 <div class="rounded px-3 mb-3 {{ $bg_condition }}">
-                                    <h5 class="text-white text-title1 py-2">Memohon Darah
+                                    <h5 class="text-white text-title1 py-2">Memohon Buku
                                         Tipe
                                         <strong>{{ $data->book_type_donor_submissions }}{{ $data->book_type_donor_submissions == 'positive' ? '+' : '-'}}</strong>
                                         di {{ $data->institutions->name_institutions }}</h5>
@@ -118,7 +118,7 @@
                     <hr>
                 </div>
             </div>
-        </div>
+        </div> -->
         <div class="col-md-8 offset-md-2 mt-5 pt-4">
             @if($errors->any())
                 <div class="alert alert-warning alert-dismissible fade show" role="alert">

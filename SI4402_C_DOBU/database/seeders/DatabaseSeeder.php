@@ -22,14 +22,14 @@ class DatabaseSeeder extends Seeder
         $institutions = new InstitutionsSeeder();
         $status_donor = new StatusDonorSeeder();
         $employees = new EmployeesSeeder();
-        $blood_bank = new BloodBankSeeder();
+        $book_bank = new BloodBankSeeder();
         $donor_events = new DonorEventsSeeder();
 
         $donators->run();
         $institutions->run();
         $status_donor->run();
         $employees->run();
-        $blood_bank->run();
+        $book_bank->run();
         $donor_events->run();
 
     }

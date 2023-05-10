@@ -60,7 +60,6 @@
                         <option value="Atlas">Atlas</option>
                         <option value="Majalah">Majalah</option>
                         <option value="Dongeng">Dongeng</option>
-                        <option value="Antalogi">Antalogi</option>
                     </select>
                     @error('book_type_donor_submissions')
                     <div class="invalid-feedback">

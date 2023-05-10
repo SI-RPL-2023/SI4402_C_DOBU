@@ -15,9 +15,9 @@ class Institutions extends Model
     protected $keyType = 'string';
     protected $fillable = ['id_institutions', 'name_institutions', 'contact_institutions', 'email_institutions', 'address_institutions', 'longitude_institutions', 'latitude_institutions'];
 
-    public function bloodBank()
+    public function bookBank()
     {
-        $this->hasMany(BloodBank::class, 'id_blood_bank');
+        $this->hasMany(BookBank::class, 'id_book_bank');
     }
 
     public function employees()

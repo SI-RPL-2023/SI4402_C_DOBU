@@ -14,11 +14,7 @@
                     <th>No.</th>
                     <th>Foto</th>
                     <th>Nama Artikel</th>
-                    <!-- <th>Tanggal</th>
-                    <th>Waktu</th>
-                    <th>Poin</th> -->
                     <th>Deskripsi</th>
-                    <!-- <th>Terakhir pengubah</th> -->
                     <th>Aksi</th>
                 </tr>
                 </thead>
@@ -51,7 +47,7 @@
                     @method("DELETE")
                     <div class="modal-content">
                         <div class="modal-header">
-                            <h5 class="modal-title">Apakah Anda yakin akan hapus Artikel <strong
+                            <h5 class="modal-title">Apakah Anda yakin akan hapus request darah dari <strong
                                     id="deleteModalLabel"></strong> ?</h5>
                             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                 <span aria-hidden="true">&times;</span>
@@ -75,16 +71,12 @@
             processing: true,
             serverSide: true,
             "scrollX": true,
-            ajax: '{{ route('event.data') }}',
+            ajax: '{{ route('artikel.data') }}',
             columns: [
                 {data: 'DT_RowIndex', name: 'DT_RowIndex', orderable: false, searchable: false},
                 {data: 'thumbnail_artikel', name: 'thumbnail_artikel'},
                 {data: 'name_artikel', name: 'name_artikel'},
-                // {data: 'date_artikel', name: 'start_artikel'},
-                // {data: 'time_artikel', name: 'end_artikel'},
-                // {data: 'point_artikel', name: 'point_artikel'},
                 {data: 'desc_artikel', name: 'desc_artikel'},
-                {data: 'modified_by', name: 'modified_by'},
                 {data: 'action', name: 'action'},
             ]
         });

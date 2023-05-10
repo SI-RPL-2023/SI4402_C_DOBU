@@ -13,7 +13,7 @@ class ArtikelController extends Controller
         return view('pages.artikel.index', [
             'title' => 'Artikel',
             'active' => 'artikel',
-            'datas' => $artikel,
+            'datas' => $Artikel,
         ]);
     }
 }

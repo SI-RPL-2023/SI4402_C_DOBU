@@ -15,105 +15,45 @@
                 </div>
             @endif
             <h3 class="text-blue font-weight-bold mt-5 mb-5">
-                <a class="text-decoration-none" href="{{ url('/_event') }}"><i class="fas fa-arrow-left text-red"></i>&emsp;&emsp;</a>
+                <a class="text-decoration-none" href="{{ url('/_artikel') }}"><i class="fas fa-arrow-left text-red"></i>&emsp;&emsp;</a>
                 Tambah Acara
             </h3>
-            <form action="{{ url('/_event') }}" method="POST" enctype="multipart/form-data">
+            <form action="{{ url('/_artikel') }}" method="POST" enctype="multipart/form-data">
                 @csrf
                 <div class="form-group mb-3">
-                    <label for="name_donor_events" class="text-title1 text-blue">Nama Acara</label>
+                    <label for="name_artikel" class="text-title1 text-blue">Nama Artikel</label>
                     <input type="text"
-                           class="form-control mt-1 text-title1 text-blue @error('name_donor_events') is-invalid @enderror"
-                           id="name_donor_events" name="name_donor_events"
-                           placeholder="Nama Acara" required value="{{ old('name_donor_events') }}">
-                    @error('name_donor_events')
+                           class="form-control mt-1 text-title1 text-blue @error('name_artikel') is-invalid @enderror"
+                           id="name_artikel" name="name_artikel"
+                           placeholder="Nama Artikel" required value="{{ old('name_artikel') }}">
+                    @error('name_artikel')
                     <div class="invalid-feedback">
                         {{ $message }}
                     </div>
                     @enderror
                 </div>
                 <div class="form-group mb-3">
-                    <label for="start_date_donor_events" class="text-title1 text-blue">Tanggal Mulai</label>
-                    <input type="date"
-                           class="form-control mt-1 text-title1 text-blue @error('start_date_donor_events') is-invalid @enderror"
-                           id="start_date_donor_events" name="start_date_donor_events"
-                           placeholder="Nama Acara" required value="{{ old('start_date_donor_events') }}">
-                    @error('start_date_donor_events')
-                    <div class="invalid-feedback">
-                        {{ $message }}
-                    </div>
-                    @enderror
-                </div>
-                <div class="form-group mb-3">
-                    <label for="end_date_donor_events" class="text-title1 text-blue">Tanggal Selesai</label>
-                    <input type="date"
-                           class="form-control mt-1 text-title1 text-blue @error('end_date_donor_events') is-invalid @enderror"
-                           id="end_date_donor_events" name="end_date_donor_events"
-                           placeholder="Nama Acara" required value="{{ old('end_date_donor_events') }}">
-                    @error('end_date_donor_events')
-                    <div class="invalid-feedback">
-                        {{ $message }}
-                    </div>
-                    @enderror
-                </div>
-                <div class="form-group mb-3">
-                    <label for="start_time_donor_events" class="text-title1 text-blue">Waktu Mulai</label>
-                    <input type="time"
-                           class="form-control mt-1 text-title1 text-blue @error('start_time_donor_events') is-invalid @enderror"
-                           id="start_time_donor_events" name="start_time_donor_events"
-                           placeholder="Nama Acara" required value="{{ old('start_time_donor_events') }}">
-                    @error('start_time_donor_events')
-                    <div class="invalid-feedback">
-                        {{ $message }}
-                    </div>
-                    @enderror
-                </div>
-                <div class="form-group mb-3">
-                    <label for="end_time_donor_events" class="text-title1 text-blue">Waktu Selesai</label>
-                    <input type="time"
-                           class="form-control mt-1 text-title1 text-blue @error('end_time_donor_events') is-invalid @enderror"
-                           id="end_time_donor_events" name="end_time_donor_events"
-                           placeholder="Nama Acara" required value="{{ old('end_time_donor_events') }}">
-                    @error('end_time_donor_events')
-                    <div class="invalid-feedback">
-                        {{ $message }}
-                    </div>
-                    @enderror
-                </div>
-                <div class="form-group mb-3">
-                    <label for="desc_donor_events" class="text-title1 text-blue">Deksripsi</label>
+                    <label for="desc_artikel" class="text-title1 text-blue">Deksripsi</label>
                     <textarea
-                        class="form-control text-title1 text-blue @error('desc_donor_events') is-invalid @enderror"
-                        id="desc_donor_events" name="desc_donor_events"
-                        rows="3">{{ old('desc_donor_events') }}</textarea>
-                    @error('desc_donor_events')
+                        class="form-control text-title1 text-blue @error('desc_artikel') is-invalid @enderror"
+                        id="desc_artikel" name="desc_artikel"
+                        rows="3">{{ old('desc_artikel') }}</textarea>
+                    @error('desc_artikel')
                     <div class="invalid-feedback">
                         {{ $message }}
                     </div>
                     @enderror
                 </div>
                 <div class="form-group mb-3">
-                    <label for="point_donor_events" class="text-title1 text-blue">Poin</label>
-                    <input type="number"
-                           class="form-control mt-1 text-title1 text-blue @error('point_donor_events') is-invalid @enderror"
-                           id="point_donor_events" name="point_donor_events"
-                           placeholder="Poin" required value="{{ old('point_donor_events') }}">
-                    @error('point_donor_events')
-                    <div class="invalid-feedback">
-                        {{ $message }}
-                    </div>
-                    @enderror
-                </div>
-                <div class="form-group mb-3">
-                    <label for="ktp" class="text-title1 text-blue">Banner (Optional)</label>
+                    <label for="ktp" class="text-title1 text-blue">Photo (Optional)</label>
                     <div class="custom-file mt-1">
                         <input onchange="validateSize(this)" type="file"
                                accept="image/jpeg,image/gif,image/png"
-                               class="custom-file-input @error('thumbnail_donor_events') is-invalid @enderror"
-                               id="customFile" name="thumbnail_donor_events">
+                               class="custom-file-input @error('thumbnail_artikel') is-invalid @enderror"
+                               id="customFile" name="thumbnail_artikel">
                         <label class="custom-file-label text-title1 text-blue" for="customFile">Choose file</label>
                     </div>
-                    @error('thumbnail_donor_events')
+                    @error('thumbnail_artikel')
                     <div class="invalid-feedback">
                         {{ $message }}
                     </div>

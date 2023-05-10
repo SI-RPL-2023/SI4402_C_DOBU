@@ -3,7 +3,8 @@
 use App\Http\Controllers\AccountController;
 use App\Http\Controllers\AccountEmployeeController;
 use App\Http\Controllers\artikelController;
-use App\Http\Controllers\BankBloodEmployeeController;
+use App\Http\Controllers\ArtikelEmployeeController;
+use App\Http\Controllers\BankBookEmployeeController;
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\DashboardEmployeeController;
 use App\Http\Controllers\DonorNoteController;
@@ -63,14 +64,16 @@ Route::middleware(['auth:donator'])->group(function () {
 
 Route::middleware(['auth:employee'])->group(function () {
     Route::get('/_dashboard', [DashboardEmployeeController::class, 'index']);
-    Route::get('/_bank', [BankBloodEmployeeController::class, 'index']);
-    Route::put('/_bank', [BankBloodEmployeeController::class, 'updateStock']);
+    Route::get('/_bank', [BankBookEmployeeController::class, 'index']);
+    Route::put('/_bank', [BankBookEmployeeController::class, 'updateStock']);
     Route::resource('/_donor', DonorNoteEmployeeController::class)->except(['create', 'store', 'show']);
     Route::get('/donor/_data', [DonorNoteEmployeeController::class, 'data'])->name('donor.data');
     Route::resource('/_submission', DonorSubmissionEmployeeController::class)->except(['create', 'store', 'show']);;
     Route::get('/submission/_data', [DonorSubmissionEmployeeController::class, 'data'])->name('submission.data');
     Route::resource('/_event', EventEmployeeController::class)->except('show');;
     Route::get('/event/_data', [EventEmployeeController::class, 'data'])->name('event.data');
+    Route::resource('/_artikel', ArtikelEmployeeController::class)->except('show');;
+Route::get('/artikel/_data', [ArtikelEmployeeController::class, 'data'])->name('artikel.data');
     Route::get('/_account', [AccountEmployeeController::class, 'index']);
     Route::put('/_updateIdentity', [AccountEmployeeController::class, 'updateIdentity']);
     Route::put('/_updateContact', [AccountEmployeeController::class, 'updateContact']);
@@ -81,3 +84,4 @@ Route::middleware(['auth:employee'])->group(function () {
 Route::middleware(['auth:donator,employee'])->group(function () {
     Route::post('/logout', [LoginController::class, 'logout']);
 });
+

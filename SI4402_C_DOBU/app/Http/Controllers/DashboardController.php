@@ -28,9 +28,9 @@ class DashboardController extends Controller
         ]);
     }
 
-    public function article()
+    public function Artikel()
     {
-        return new ArticleController();
+        return new ArtikelController();
     }
 
     public function stockPlasma()

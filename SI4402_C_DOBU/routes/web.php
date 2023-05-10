@@ -2,7 +2,7 @@
 
 use App\Http\Controllers\AccountController;
 use App\Http\Controllers\AccountEmployeeController;
-use App\Http\Controllers\ArticleController;
+use App\Http\Controllers\artikelController;
 use App\Http\Controllers\BankBloodEmployeeController;
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\DashboardEmployeeController;
@@ -52,7 +52,7 @@ Route::middleware(['auth:donator'])->group(function () {
     Route::post('/donor', [DonorNoteController::class, 'store']);
     Route::get('/submission', [DonorSubmissionController::class, 'index']);
     Route::post('/submission', [DonorSubmissionController::class, 'store']);
-    Route::get('/article', [ArticleController::class, 'index']);
+    Route::get('/artikel', [artikelController::class, 'index']);
     Route::get('/account', [AccountController::class, 'index']);
     Route::put('/updatePhoto', [AccountController::class, 'updatePhoto']);
     Route::put('/updateIdentity', [AccountController::class, 'updateIdentity']);

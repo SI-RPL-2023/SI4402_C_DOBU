@@ -50,11 +50,20 @@
             </div>
         </li>
 
-        <li class="nav-item ml-2">
-            <a class="nav-link" href="{{ url('/article') }}">
+        <!-- <li class="nav-item ml-2">
+            <a class="nav-link" href="{{ url('/artikel') }}">
                 <img src="{{ url('/images/icon/ic_document.svg') }}" class="img-fluid" width="24px" alt="artikel">
                 <span
-                    class="text-grey hover-underline-animation {{ ($active === "article") ? 'active' : '' }}">Artikel</span></a>
+                    class="text-grey hover-underline-animation {{ ($active === "artikel") ? 'active' : '' }}">Artikel</span></a>
+        </li> -->
+
+        <li class="nav-item ml-2">
+            <a class="nav-link" href="{{ url('/artikel') }}">
+                <img src="{{ url('/images/icon/ic_calender.svg') }}" class="img-fluid" width="18px"
+                     style="margin-left: 2px;"
+                     alt="acara">
+                <span class="text-grey hover-underline-animation {{ ($active === "artikel") ? 'active' : '' }}"
+                      style="margin-left: 3px;">Artikell</span></a>
         </li>
 
     @elseif(auth()->guard('employee')->check())
@@ -92,10 +101,10 @@
         </li>
 
         <li class="nav-item ml-2">
-            <a class="nav-link" href="{{ url('/_article') }}">
+            <a class="nav-link" href="{{ url('/_donor') }}">
                 <img src="{{ url('/images/icon/ic_document.svg') }}" class="img-fluid" width="24px" alt="artikel">
                 <span
-                    class="text-grey hover-underline-animation {{ ($active === "article") ? 'active' : '' }}">Kelola Artikel</span></a>
+                    class="text-grey hover-underline-animation {{ ($active === "artikel") ? 'active' : '' }}">Kelola Artikel</span></a>
         </li>
     @endif
 

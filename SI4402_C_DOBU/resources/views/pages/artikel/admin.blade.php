@@ -5,7 +5,7 @@
 @section('container')
     <div class="row">
         <div class="col-md-12 mt-5 mb-2">
-            <a href="{{ url('_article/create') }}" class="btn btn-primary">Tambah</a>
+            <a href="{{ url('_artikel/create') }}" class="btn btn-primary">Tambah</a>
         </div>
         <div class="col-md-12">
             <table id="myTable" class="table table-stripped text-grey">
@@ -14,7 +14,11 @@
                     <th>No.</th>
                     <th>Foto</th>
                     <th>Nama Artikel</th>
+                    <!-- <th>Tanggal</th>
+                    <th>Waktu</th>
+                    <th>Poin</th> -->
                     <th>Deskripsi</th>
+                    <!-- <th>Terakhir pengubah</th> -->
                     <th>Aksi</th>
                 </tr>
                 </thead>
@@ -47,7 +51,7 @@
                     @method("DELETE")
                     <div class="modal-content">
                         <div class="modal-header">
-                            <h5 class="modal-title">Apakah Anda yakin akan hapus artikel dari <strong
+                            <h5 class="modal-title">Apakah Anda yakin akan hapus Artikel <strong
                                     id="deleteModalLabel"></strong> ?</h5>
                             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                 <span aria-hidden="true">&times;</span>
@@ -71,12 +75,16 @@
             processing: true,
             serverSide: true,
             "scrollX": true,
-            ajax: '{{ route('article.data') }}',
+            ajax: '{{ route('event.data') }}',
             columns: [
                 {data: 'DT_RowIndex', name: 'DT_RowIndex', orderable: false, searchable: false},
-                {data: 'thumbnail_articel', name: 'thumbnail_articel'},
-                {data: 'name_articel', name: 'name_articel'},
-                {data: 'desc_articel', name: 'desc_articel'},
+                {data: 'thumbnail_artikel', name: 'thumbnail_artikel'},
+                {data: 'name_artikel', name: 'name_artikel'},
+                // {data: 'date_artikel', name: 'start_artikel'},
+                // {data: 'time_artikel', name: 'end_artikel'},
+                // {data: 'point_artikel', name: 'point_artikel'},
+                {data: 'desc_artikel', name: 'desc_artikel'},
+                {data: 'modified_by', name: 'modified_by'},
                 {data: 'action', name: 'action'},
             ]
         });
@@ -91,8 +99,8 @@
         function btnDelete(data) {
             console.log(data)
             $('#deleteModal').modal('show');
-            document.getElementById("deleteModalLabel").innerText = data['name_articel'];
-            document.getElementById("deleteAction").action = "/_article/" + data['id_articel'];
+            document.getElementById("deleteModalLabel").innerText = data['name_artikel'];
+            document.getElementById("deleteAction").action = "/_artikel/" + data['id_artikel'];
         }
     </script>
     <script>

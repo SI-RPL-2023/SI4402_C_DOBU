@@ -15,24 +15,24 @@
                 </div>
             @endif
             <h3 class="text-blue font-weight-bold mt-5 mb-5">
-                <a class="text-decoration-none" href="{{ url('/_article') }}"><i class="fas fa-arrow-left text-red"></i>&emsp;&emsp;</a>
-                Tambah Artikel
+                <a class="text-decoration-none" href="{{ url('/_event') }}"><i class="fas fa-arrow-left text-red"></i>&emsp;&emsp;</a>
+                Tambah Acara
             </h3>
-            <form action="{{ url('/_article') }}" method="POST" enctype="multipart/form-data">
+            <form action="{{ url('/_event') }}" method="POST" enctype="multipart/form-data">
                 @csrf
                 <div class="form-group mb-3">
-                    <label for="name_articel" class="text-title1 text-blue">Nama Artikel</label>
+                    <label for="name_donor_events" class="text-title1 text-blue">Nama Acara</label>
                     <input type="text"
-                           class="form-control mt-1 text-title1 text-blue @error('name_articel') is-invalid @enderror"
-                           id="name_articel" name="name_articel"
-                           placeholder="Nama Acara" required value="{{ old('name_articel') }}">
-                    @error('name_articel')
+                           class="form-control mt-1 text-title1 text-blue @error('name_donor_events') is-invalid @enderror"
+                           id="name_donor_events" name="name_donor_events"
+                           placeholder="Nama Acara" required value="{{ old('name_donor_events') }}">
+                    @error('name_donor_events')
                     <div class="invalid-feedback">
                         {{ $message }}
                     </div>
                     @enderror
                 </div>
-                <!-- <div class="form-group mb-3">
+                <div class="form-group mb-3">
                     <label for="start_date_donor_events" class="text-title1 text-blue">Tanggal Mulai</label>
                     <input type="date"
                            class="form-control mt-1 text-title1 text-blue @error('start_date_donor_events') is-invalid @enderror"
@@ -43,8 +43,8 @@
                         {{ $message }}
                     </div>
                     @enderror
-                </div> -->
-                <!-- <div class="form-group mb-3">
+                </div>
+                <div class="form-group mb-3">
                     <label for="end_date_donor_events" class="text-title1 text-blue">Tanggal Selesai</label>
                     <input type="date"
                            class="form-control mt-1 text-title1 text-blue @error('end_date_donor_events') is-invalid @enderror"
@@ -55,8 +55,8 @@
                         {{ $message }}
                     </div>
                     @enderror
-                </div> -->
-                <!-- <div class="form-group mb-3">
+                </div>
+                <div class="form-group mb-3">
                     <label for="start_time_donor_events" class="text-title1 text-blue">Waktu Mulai</label>
                     <input type="time"
                            class="form-control mt-1 text-title1 text-blue @error('start_time_donor_events') is-invalid @enderror"
@@ -67,8 +67,8 @@
                         {{ $message }}
                     </div>
                     @enderror
-                </div> -->
-                <!-- <div class="form-group mb-3">
+                </div>
+                <div class="form-group mb-3">
                     <label for="end_time_donor_events" class="text-title1 text-blue">Waktu Selesai</label>
                     <input type="time"
                            class="form-control mt-1 text-title1 text-blue @error('end_time_donor_events') is-invalid @enderror"
@@ -79,20 +79,20 @@
                         {{ $message }}
                     </div>
                     @enderror
-                </div> -->
+                </div>
                 <div class="form-group mb-3">
-                    <label for="desc_articel" class="text-title1 text-blue">Deksripsi</label>
+                    <label for="desc_donor_events" class="text-title1 text-blue">Deksripsi</label>
                     <textarea
-                        class="form-control text-title1 text-blue @error('desc_articel') is-invalid @enderror"
-                        id="desc_articel" name="desc_articel"
-                        rows="3">{{ old('desc_articel') }}</textarea>
-                    @error('desc_articel')
+                        class="form-control text-title1 text-blue @error('desc_donor_events') is-invalid @enderror"
+                        id="desc_donor_events" name="desc_donor_events"
+                        rows="3">{{ old('desc_donor_events') }}</textarea>
+                    @error('desc_donor_events')
                     <div class="invalid-feedback">
                         {{ $message }}
                     </div>
                     @enderror
                 </div>
-                <!-- <div class="form-group mb-3">
+                <div class="form-group mb-3">
                     <label for="point_donor_events" class="text-title1 text-blue">Poin</label>
                     <input type="number"
                            class="form-control mt-1 text-title1 text-blue @error('point_donor_events') is-invalid @enderror"
@@ -103,17 +103,17 @@
                         {{ $message }}
                     </div>
                     @enderror
-                </div> -->
+                </div>
                 <div class="form-group mb-3">
                     <label for="ktp" class="text-title1 text-blue">Banner (Optional)</label>
                     <div class="custom-file mt-1">
                         <input onchange="validateSize(this)" type="file"
                                accept="image/jpeg,image/gif,image/png"
-                               class="custom-file-input @error('thumbnail_articel') is-invalid @enderror"
-                               id="customFile" name="thumbnail_articel">
+                               class="custom-file-input @error('thumbnail_donor_events') is-invalid @enderror"
+                               id="customFile" name="thumbnail_donor_events">
                         <label class="custom-file-label text-title1 text-blue" for="customFile">Choose file</label>
                     </div>
-                    @error('thumbnail_articel')
+                    @error('thumbnail_donor_events')
                     <div class="invalid-feedback">
                         {{ $message }}
                     </div>

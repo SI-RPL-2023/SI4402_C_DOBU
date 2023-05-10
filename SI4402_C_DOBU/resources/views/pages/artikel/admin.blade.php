@@ -4,20 +4,21 @@
 @endsection
 @section('container')
     <div class="row">
-        <div class="col-md-12 mt-5 ">
+        <div class="col-md-12 mt-5 mb-2">
+            <a href="{{ url('_artikel/create') }}" class="btn btn-primary">Tambah</a>
+        </div>
+        <div class="col-md-12">
             <table id="myTable" class="table table-stripped text-grey">
                 <thead>
                 <tr>
                     <th>No.</th>
-                    <th>Penerima</th>
-                    <th>Pemohon</th>
-                    <th>Jenis Buku</th>
-                    <th>Jumlah</th>
-                    <th>Digunakan</th>
-                    <th>KTP</th>
-                    <th>Surat</th>
-                    <th>Status</th>
-                    <th>Pengubah terakhir</th>
+                    <th>Foto</th>
+                    <th>Nama Artikel</th>
+                    <!-- <th>Tanggal</th>
+                    <th>Waktu</th>
+                    <th>Poin</th> -->
+                    <th>Deskripsi</th>
+                    <!-- <th>Terakhir pengubah</th> -->
                     <th>Aksi</th>
                 </tr>
                 </thead>
@@ -50,7 +51,7 @@
                     @method("DELETE")
                     <div class="modal-content">
                         <div class="modal-header">
-                            <h5 class="modal-title">Apakah Anda yakin akan hapus request buku dari <strong
+                            <h5 class="modal-title">Apakah Anda yakin akan hapus Artikel <strong
                                     id="deleteModalLabel"></strong> ?</h5>
                             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                 <span aria-hidden="true">&times;</span>
@@ -74,17 +75,15 @@
             processing: true,
             serverSide: true,
             "scrollX": true,
-            ajax: '{{ route('submission.data') }}',
+            ajax: '{{ route('event.data') }}',
             columns: [
                 {data: 'DT_RowIndex', name: 'DT_RowIndex', orderable: false, searchable: false},
-                {data: 'recipient_donor_submissions', name: 'recipient_donor_submissions'},
-                {data: 'applicant_donor_submissions', name: 'applicant_donor_submissions'},
-                {data: 'book_type_donor_submissions', name: 'book_type_donor_submissions'},
-                {data: 'quantity_donor_submissions', name: 'quantity_donor_submissions'},
-                {data: 'time_used_donor_submissions', name: 'time_used_donor_submissions'},
-                {data: 'ktp_donor_submissions', name: 'ktp_donor_submissions'},
-                {data: 'letter_donor_submissions', name: 'letter_donor_submissions'},
-                {data: 'status.name_status_donor', name: 'status.name_status_donor'},
+                {data: 'thumbnail_artikel', name: 'thumbnail_artikel'},
+                {data: 'name_artikel', name: 'name_artikel'},
+                // {data: 'date_artikel', name: 'start_artikel'},
+                // {data: 'time_artikel', name: 'end_artikel'},
+                // {data: 'point_artikel', name: 'point_artikel'},
+                {data: 'desc_artikel', name: 'desc_artikel'},
                 {data: 'modified_by', name: 'modified_by'},
                 {data: 'action', name: 'action'},
             ]
@@ -100,8 +99,8 @@
         function btnDelete(data) {
             console.log(data)
             $('#deleteModal').modal('show');
-            document.getElementById("deleteModalLabel").innerText = data['donators']['name_donators'];
-            document.getElementById("deleteAction").action = "/_submission/" + data['id_donor_submissions'];
+            document.getElementById("deleteModalLabel").innerText = data['name_artikel'];
+            document.getElementById("deleteAction").action = "/_artikel/" + data['id_artikel'];
         }
     </script>
     <script>

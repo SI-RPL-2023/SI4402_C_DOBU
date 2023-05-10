@@ -128,7 +128,8 @@ input[type=search]:focus {
     transform: translateY(-50%);
 }
 
-.list-article p, ellipsis-1 {
+.list-artikel p,
+ellipsis-1 {
     overflow: hidden;
     text-overflow: ellipsis;
     display: -webkit-box;
@@ -139,7 +140,8 @@ input[type=search]:focus {
 }
 
 
-.list-event p, ellipsis-2 {
+.list-event p,
+ellipsis-2 {
     overflow: hidden;
     text-overflow: ellipsis;
     display: -webkit-box;

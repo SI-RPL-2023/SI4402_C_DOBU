@@ -39,23 +39,6 @@
                            readonly>
                 </div>
                 <div class="form-group mb-3">
-                    <label for="book_type_donor_submissions" class="text-title1 text-blue">Golongan Darah</label>
-                    <input type="text"
-                           class="form-control mt-1 text-title1 text-blue "
-                           id="book_type_donor_submissions"
-                           placeholder="Golongan Darah" required value="{{ $data->book_type_donor_submissions  }}"
-                           readonly>
-                </div>
-                <div class="form-group mb-3">
-                    <label for="rhesus_type_donor_submissions" class="text-title1 text-blue">Rhesus</label>
-                    <input type="text"
-                           class="form-control mt-1 text-title1 text-blue "
-                           id="rhesus_type_donor_submissions"
-                           placeholder="Rhesus" required
-                           value="{{ $data->rhesus_type_donor_submissions == 'positive' ? 'Positif (+)' : 'Negatif (-)' }}"
-                           readonly>
-                </div>
-                <div class="form-group mb-3">
                     <label for="quantity_donor_submissions" class="text-title1 text-blue">Jumlah</label>
                     <input type="number"
                            class="form-control mt-1 text-title1 text-blue @error('quantity_donor_submissions') is-invalid @enderror"
@@ -67,19 +50,6 @@
                     </div>
                     @enderror
 
-                </div>
-                <div class="form-group mb-3">
-                    <label for="time_used_donor_submissions" class="text-title1 text-blue">Digunakan</label>
-                    <input type="datetime-local"
-                           class="form-control mt-1 text-title1 text-blue @error('time_used_donor_submissions') is-invalid @enderror"
-                           id="time_used_donor_submissions" name="time_used_donor_submissions"
-                           placeholder="Digunakan"
-                           value="{{ $data->time_used_donor_submissions != null ? \Carbon\Carbon::parse($data->time_used_donor_submissions)->format('Y-m-d\TH:i') : null }}">
-                    @error('time_used_donor_submissions')
-                    <div class="invalid-feedback">
-                        {{ $message }}
-                    </div>
-                    @enderror
                 </div>
                 <div class="form-group mb-3 d-flex flex-column">
                     <label for="output" class="text-title1 text-blue">KTP</label>

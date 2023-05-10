@@ -3,10 +3,10 @@
 namespace Database\Seeders;
 
 use Ramsey\Uuid\Uuid;
-use App\Models\Articel;
+use App\Models\artikel;
 use Illuminate\Database\Seeder;
 
-class ArticelSeeder extends Seeder
+class artikelSeeder extends Seeder
 {
     /**
      * Run the database seeds.
@@ -15,28 +15,28 @@ class ArticelSeeder extends Seeder
      */
     public function run()
     {
-        Articel::create([
-            'id_articel' => Uuid::uuid4()->toString() . "\n",
-            'name_articel' => 'Membantu Pendidikan dan Meningkatkan Minat Baca',
-            'desc_articel' => 'Buku adalah salah satu sumber pengetahuan yang penting untuk meningkatkan kualitas pendidikan dan membuka wawasan. Namun, tidak semua orang memiliki akses mudah ke buku, terutama bagi mereka yang kurang mampu atau tinggal di daerah terpencil. Oleh karena itu, donasi buku adalah salah satu cara yang efektif untuk membantu meningkatkan aksesibilitas buku dan membantu meningkatkan minat baca masyarakat.
+        artikel::create([
+            'id_artikel' => Uuid::uuid4()->toString() . "\n",
+            'name_artikel' => 'Membantu Pendidikan dan Meningkatkan Minat Baca',
+            'desc_artikel' => 'Buku adalah salah satu sumber pengetahuan yang penting untuk meningkatkan kualitas pendidikan dan membuka wawasan. Namun, tidak semua orang memiliki akses mudah ke buku, terutama bagi mereka yang kurang mampu atau tinggal di daerah terpencil. Oleh karena itu, donasi buku adalah salah satu cara yang efektif untuk membantu meningkatkan aksesibilitas buku dan membantu meningkatkan minat baca masyarakat.
 
             Donasi buku dapat dilakukan oleh siapa saja dan dari mana saja. Buku-buku yang didonasikan bisa berupa buku pelajaran, buku fiksi, buku non-fiksi, buku anak-anak, majalah, dan lain sebagainya. Namun, penting untuk memastikan bahwa buku yang didonasikan masih dalam kondisi yang layak baca dan tidak rusak.',
         ]);
 
-        Articel::create([
-            'id_articel' => Uuid::uuid4()->toString() . "\n",
-            'name_articel' => 'Kegiatan yang bisa membantu memperluas akses ke literasi dan pengetahuan bagi masyarakat yang membutuhkan.',
-            'desc_articel' => 'Kegiatan donasi buku bisa dilakukan oleh individu, kelompok masyarakat, maupun lembaga sosial. Donasi buku juga dapat dilakukan melalui program-program sosial, seperti program bantuan pendidikan atau program bantuan sosial lainnya.
+        artikel::create([
+            'id_artikel' => Uuid::uuid4()->toString() . "\n",
+            'name_artikel' => 'Kegiatan yang bisa membantu memperluas akses ke literasi dan pengetahuan bagi masyarakat yang membutuhkan.',
+            'desc_artikel' => 'Kegiatan donasi buku bisa dilakukan oleh individu, kelompok masyarakat, maupun lembaga sosial. Donasi buku juga dapat dilakukan melalui program-program sosial, seperti program bantuan pendidikan atau program bantuan sosial lainnya.
 
             Manfaat donasi buku bukan hanya bagi penerima donasi, tetapi juga bagi para donatur. Dengan berdonasi buku, donatur dapat berkontribusi pada peningkatan literasi dan pendidikan masyarakat. Selain itu, donasi buku juga dapat membantu penghematan lingkungan, karena buku-buku yang tidak terpakai dapat didaur ulang dan digunakan oleh orang lain.
             
             Sementara itu, bagi penerima donasi buku, donasi buku bisa membantu memperluas pengetahuan dan meningkatkan literasi. Buku-buku yang diterima melalui donasi bisa membantu meningkatkan kemampuan membaca, menulis, serta meningkatkan pemahaman tentang berbagai macam topik.',
         ]);
 
-        Articel::create([
-            'id_articel' => Uuid::uuid4()->toString() . "\n",
-            'name_articel' => 'Beberapa langkah yang dapat dilakukan dalam mengadakan acara donasi Buku',
-            'desc_articel' => 'Berikut adalah beberapa langkah yang dapat dilakukan dalam mengadakan acara donasi buku:
+        artikel::create([
+            'id_artikel' => Uuid::uuid4()->toString() . "\n",
+            'name_artikel' => 'Beberapa langkah yang dapat dilakukan dalam mengadakan acara donasi Buku',
+            'desc_artikel' => 'Berikut adalah beberapa langkah yang dapat dilakukan dalam mengadakan acara donasi buku:
 
             Persiapan
             Persiapan meliputi menentukan tujuan acara, mengajak dan menyusun tim, serta menyiapkan tempat pengumpulan buku. Pastikan tempat pengumpulan mudah diakses oleh masyarakat dan terlihat menarik untuk menarik perhatian lebih banyak orang.

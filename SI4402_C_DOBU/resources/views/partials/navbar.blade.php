@@ -90,6 +90,13 @@
                      alt="notifikasi">
                 <span class="text-grey hover-underline-animation {{ ($active === "event") ? 'active' : '' }}">Kelola Event</span></a>
         </li>
+
+        <li class="nav-item ml-2">
+            <a class="nav-link" href="{{ url('/_article') }}">
+                <img src="{{ url('/images/icon/ic_document.svg') }}" class="img-fluid" width="24px" alt="artikel">
+                <span
+                    class="text-grey hover-underline-animation {{ ($active === "article") ? 'active' : '' }}">Kelola Artikel</span></a>
+        </li>
     @endif
 
     <li class="nav-item m-2">

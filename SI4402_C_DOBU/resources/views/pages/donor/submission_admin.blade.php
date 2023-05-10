@@ -11,8 +11,7 @@
                     <th>No.</th>
                     <th>Penerima</th>
                     <th>Pemohon</th>
-                    <th>Gol. Darah</th>
-                    <th>Rhesus</th>
+                    <th>Jenis Buku</th>
                     <th>Jumlah</th>
                     <th>Digunakan</th>
                     <th>KTP</th>
@@ -51,7 +50,7 @@
                     @method("DELETE")
                     <div class="modal-content">
                         <div class="modal-header">
-                            <h5 class="modal-title">Apakah Anda yakin akan hapus request darah dari <strong
+                            <h5 class="modal-title">Apakah Anda yakin akan hapus request buku dari <strong
                                     id="deleteModalLabel"></strong> ?</h5>
                             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                 <span aria-hidden="true">&times;</span>

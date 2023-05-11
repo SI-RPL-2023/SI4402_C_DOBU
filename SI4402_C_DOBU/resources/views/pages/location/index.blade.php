@@ -76,8 +76,8 @@
                     </button>
                 </div>
                 <div class="modal-body">
-                    <div class="d-flex flex-column">
-                        <small class="text-center mx-auto text-grey">Informasi Bank Darah</small>
+                    <!-- <div class="d-flex flex-column">
+                        <small class="text-center mx-auto text-grey">Informasi Bank Buku</small>
                         <div class="container">
                             <div class="row w-75 mx-auto mt-2">
                                 <div class="col-md-6 col-sm-12 mb-3">
@@ -188,7 +188,7 @@
                             </div>
 
                         </div>
-                    </div>
+                    </div> -->
                     <small>Lokasi</small>
                     <p id="location" class="ellipsis-1 text-blue text-title1">Kantor PMI Kota Kediri</p>
                     <small class="mt-2">Alamat</small>
@@ -204,7 +204,7 @@
                     <form action="{{ url('/donor') }}" method="GET">
                         <input type="hidden" id="id_institutions" name="location">
                         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                        <button type="submit" class="btn bg-red text-white">Donor Disini</button>
+                        <button type="submit" class="btn bg-red text-white">Donasi Disini</button>
                     </form>
                 </div>
             </div>

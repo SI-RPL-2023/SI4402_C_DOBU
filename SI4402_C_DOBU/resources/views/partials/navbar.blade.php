@@ -142,7 +142,7 @@
         </li>
 
         <li class="nav-item ml-2">
-            <a class="nav-link" href="{{ url('/_faq') }}">
+            <a class="nav-link" href="{{ url('/adminFAQ') }}">
                 <img src="{{ url('/images/icon/ic_question.svg') }}" class="img-fluid" width="22px" alt="faq">
                 <span
                     class="text-grey hover-underline-animation {{ ($active === "faq") ? 'active' : '' }}">FAQ</span></a>

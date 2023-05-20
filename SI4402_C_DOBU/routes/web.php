@@ -73,15 +73,23 @@ Route::middleware(['auth:employee'])->group(function () {
     Route::resource('/_event', EventEmployeeController::class)->except('show');;
     Route::get('/event/_data', [EventEmployeeController::class, 'data'])->name('event.data');
     Route::resource('/_artikel', ArtikelEmployeeController::class)->except('show');;
-Route::get('/artikel/_data', [ArtikelEmployeeController::class, 'data'])->name('artikel.data');
+    Route::get('/artikel/_data', [ArtikelEmployeeController::class, 'data'])->name('artikel.data');
     Route::get('/_account', [AccountEmployeeController::class, 'index']);
     Route::put('/_updateIdentity', [AccountEmployeeController::class, 'updateIdentity']);
     Route::put('/_updateContact', [AccountEmployeeController::class, 'updateContact']);
     Route::put('/_updatePassword', [AccountEmployeeController::class, 'updatePassword']);
     Route::get('/_faq', [FaqController::class, 'index']);
+    route::get('/adminFAQ', [FaqController::class, 'adminFAQ']);
+    route::get('/tambah-faq', [FaqController::class, 'tambahFAQ']);
+    route::get('/edit-faq/{id}', [FaqController::class, 'editFAQ']);
+    route::put('/edit-faq/{id}', [FaqController::class, 'updateFAQ']);
+    route::post('/tambah-faq', [FaqController::class, 'insertFAQ']);
+    route::delete('/adminFAQ/{id}', [FaqController::class, 'deleteFAQ']);
 });
 
 Route::middleware(['auth:donator,employee'])->group(function () {
     Route::post('/logout', [LoginController::class, 'logout']);
 });
+
+
 

@@ -15,7 +15,7 @@
                     </button>
                 </div>
             @endif
-            <h3 class="text-blue font-weight-bold mt-5">Stok Bank Buku</h3>
+            <h3 class="text-blue font-weight-bold mt-5">Stok Bank buku</h3>
             <small>Pengubah Terakhir : {{ $bookBank[0]->modified_by ?? "-" }}</small>
             <form action="{{ url('/_bank') }}" method="POST" class="mt-4">
                 @csrf

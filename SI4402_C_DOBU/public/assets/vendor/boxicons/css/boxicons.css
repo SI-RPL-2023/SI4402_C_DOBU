@@ -2068,7 +2068,7 @@
   .bx-dollar-circle:before {
     content: "\eaad";
   }
-  .bx-donate-blood:before {
+  .bx-donate-book:before {
     content: "\eaae";
   }
   .bx-donate-heart:before {
@@ -4273,7 +4273,7 @@
   .bxs-dollar-circle:before {
     content: "\ed8c";
   }
-  .bxs-donate-blood:before {
+  .bxs-donate-book:before {
     content: "\ed8d";
   }
   .bxs-donate-heart:before {

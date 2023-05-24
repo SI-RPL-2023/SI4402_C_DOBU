@@ -22,7 +22,7 @@ SET TIME_ZONE = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `gelood`
+-- Database: `DOBU`
 --
 
 -- --------------------------------------------------------
@@ -82,17 +82,17 @@ INSERT INTO `ARTIKEL` (
 -- Struktur dari tabel `book_bank`
 --
 
-CREATE TABLE `book_bank` (
-  `ID_book_bank` CHAR(36) COLLATE UTF8MB4_UNICODE_CI NOT NULL,
+CREATE TABLE `BOOK_BANK` (
+  `ID_BOOK_BANK` CHAR(36) COLLATE UTF8MB4_UNICODE_CI NOT NULL,
   `ID_INSTITUTIONS` CHAR(36) COLLATE UTF8MB4_UNICODE_CI NOT NULL,
-  `Novel` INT(11) NOT NULL,
-  `Komik` INT(11) NOT NULL,
-  `Biografi` INT(11) NOT NULL,
-  `Ilmiah` INT(11) NOT NULL,
-  `Kamus` INT(11) NOT NULL,
-  `Atlas` INT(11) NOT NULL,
-  `Majalah` INT(11) NOT NULL,
-  `Dongeng` INT(11) NOT NULL,
+  `NOVEL` INT(11) NOT NULL,
+  `KOMIK` INT(11) NOT NULL,
+  `BIOGRAFI` INT(11) NOT NULL,
+  `ILMIAH` INT(11) NOT NULL,
+  `KAMUS` INT(11) NOT NULL,
+  `ATLAS` INT(11) NOT NULL,
+  `MAJALAH` INT(11) NOT NULL,
+  `DONGENG` INT(11) NOT NULL,
   `MODIFIED_BY` VARCHAR(255) COLLATE UTF8MB4_UNICODE_CI DEFAULT NULL,
   `CREATED_AT` TIMESTAMP NULL DEFAULT NULL,
   `UPDATED_AT` TIMESTAMP NULL DEFAULT NULL
@@ -102,17 +102,17 @@ CREATE TABLE `book_bank` (
 -- Dumping data untuk tabel `book_bank`
 --
 
-INSERT INTO `book_bank` (
-  `ID_book_bank`,
+INSERT INTO `BOOK_BANK` (
+  `ID_BOOK_BANK`,
   `ID_INSTITUTIONS`,
-  `Novel`,
-  `Komik`,
-  `Biografi`,
-  `Ilmiah`,
-  `Kamus`,
-  `Atlas`,
-  `Majalah`,
-  `Dongeng`,
+  `NOVEL`,
+  `KOMIK`,
+  `BIOGRAFI`,
+  `ILMIAH`,
+  `KAMUS`,
+  `ATLAS`,
+  `MAJALAH`,
+  `DONGENG`,
   `MODIFIED_BY`,
   `CREATED_AT`,
   `UPDATED_AT`
@@ -710,7 +710,7 @@ INSERT INTO `DONOR_EVENTS` (
 (
   '717b1b8c-956d-4bc1-875d-1bed56d1a01c',
   '04c10453-6762-3a69-9cd4-fdfc043164bd',
-  'Charity Day - Blood Donor',
+  'Charity Day - Book Donor',
   '2023-01-20',
   '2023-02-15',
   '08:00:00',
@@ -725,7 +725,7 @@ INSERT INTO `DONOR_EVENTS` (
 (
   '7f4ec328-e2cf-4d86-bf40-98f4ecd2842c',
   '07f00675-121a-3c22-9f77-97e21324aeeb',
-  'MAP Fashion Blood Donation',
+  'MAP Fashion Book Donation',
   '2023-07-20',
   '2023-10-15',
   '08:00:00',
@@ -785,7 +785,7 @@ INSERT INTO `DONOR_EVENTS` (
 (
   'a4467d5b-91c4-448c-bea4-f8cdb07b1700',
   '0a2fdb17-2d3e-3949-9f36-68cf14b941e5',
-  'Give Blood and Keep The World Beating',
+  'Give Book and Keep The World Beating',
   '2023-04-24',
   '2023-05-01',
   '08:00:00',
@@ -830,7 +830,7 @@ INSERT INTO `DONOR_EVENTS` (
 (
   'd4e0ca1a-ee5d-4fd0-992c-28cecae3e08d',
   '05fae751-7d73-3b41-a567-44843869588f',
-  'Donor darah, share your blood save their life',
+  'Donor darah, share your book save their life',
   '2023-03-03',
   '2023-07-25',
   '08:00:00',
@@ -890,7 +890,7 @@ INSERT INTO `DONOR_EVENTS` (
 (
   'ea22c93c-7d17-4cfa-aa8f-bc046cab7b1e',
   '05fae751-7d73-3b41-a567-44843869588f',
-  'PMI day, the day for giving a life with blood donation',
+  'PMI day, the day for giving a life with book donation',
   '2023-02-03',
   '2023-06-05',
   '08:00:00',
@@ -1383,7 +1383,7 @@ INSERT INTO `MIGRATIONS` (
 ),
 (
   9,
-  '2023_01_03_074647_create_blood_bank_table',
+  '2023_01_03_074647_create_book_bank_table',
   1
 ),
 (
@@ -1501,7 +1501,7 @@ ALTER TABLE `ARTIKEL` ADD PRIMARY KEY (`ID_ARTIKEL`);
 --
 -- Indeks untuk tabel `book_bank`
 --
-ALTER TABLE `book_bank` ADD PRIMARY KEY (`ID_book_bank`);
+ALTER TABLE `BOOK_BANK` ADD PRIMARY KEY (`ID_BOOK_BANK`);
 
 --
 -- Indeks untuk tabel `donators`

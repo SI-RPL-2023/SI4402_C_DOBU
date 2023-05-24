@@ -22,14 +22,6 @@
                     @foreach($datas as $data)
                         <a class="text-decoration-none" data-toggle="modal" data-target="#detailModal" href="#"
                            onclick="btnDetail(
-                               '{{$data->a_positive_blood_bank}}',
-                               '{{$data->a_negative_blood_bank}}',
-                               '{{$data->b_positive_blood_bank}}',
-                               '{{$data->b_negative_blood_bank}}',
-                               '{{$data->ab_positive_blood_bank}}',
-                               '{{$data->ab_negative_blood_bank}}',
-                               '{{$data->o_positive_blood_bank}}',
-                               '{{$data->o_negative_blood_bank}}',
                                '{{$data->institutions->id_institutions}}',
                                '{{$data->institutions->name_institutions}}',
                                '{{$data->institutions->address_institutions}}',
@@ -76,119 +68,6 @@
                     </button>
                 </div>
                 <div class="modal-body">
-                    <!-- <div class="d-flex flex-column">
-                        <small class="text-center mx-auto text-grey">Informasi Bank Buku</small>
-                        <div class="container">
-                            <div class="row w-75 mx-auto mt-2">
-                                <div class="col-md-6 col-sm-12 mb-3">
-                                    <div class="bg-red bank-blood">
-                                        <div class="row">
-                                            <div class="col-4 m-auto">
-                                                <p class="text-center text-white text-title1 pl-2">A</p>
-                                            </div>
-                                            <div class="col-8">
-                                                <div class="row">
-                                                    <div class="col-12 bg-red-2 bank-blood-rhesus-top text-white pt-3">
-                                                        <p class="text-truncate">
-                                                            <i class="fas fa-plus-circle"></i>
-                                                            <span id="a_positive">1202190044</span>
-                                                        </p>
-                                                    </div>
-                                                    <div
-                                                        class="col-12 col-12 bg-red-2 bank-blood-rhesus-bottom text-white text-white pt-3">
-                                                        <p class="text-truncate">
-                                                            <i class="fas fa-minus-circle"></i>
-                                                            <span id="a_negative">1202190044</span>
-                                                        </p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-6 col-sm-12 mb-3">
-                                    <div class="bg-red bank-blood">
-                                        <div class="row">
-                                            <div class="col-4 m-auto">
-                                                <p class="text-center text-white text-title1 pl-2">AB</p>
-                                            </div>
-                                            <div class="col-8">
-                                                <div class="row">
-                                                    <div class="col-12 bg-red-2 bank-blood-rhesus-top text-white pt-3">
-                                                        <p class="text-truncate">
-                                                            <i class="fas fa-plus-circle"></i>
-                                                            <span id="ab_positive">1202190044</span>
-                                                        </p>
-                                                    </div>
-                                                    <div
-                                                        class="col-12 col-12 bg-red-2 bank-blood-rhesus-bottom text-white text-white pt-3">
-                                                        <p class="text-truncate">
-                                                            <i class="fas fa-minus-circle"></i>
-                                                            <span id="ab_negative">1202190044</span>
-                                                        </p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-6 col-sm-12 mb-3">
-                                    <div class="bg-red bank-blood">
-                                        <div class="row">
-                                            <div class="col-4 m-auto">
-                                                <p class="text-center text-white text-title1 pl-2">B</p>
-                                            </div>
-                                            <div class="col-8">
-                                                <div class="row">
-                                                    <div class="col-12 bg-red-2 bank-blood-rhesus-top text-white pt-3">
-                                                        <p class="text-truncate">
-                                                            <i class="fas fa-plus-circle"></i>
-                                                            <span id="b_positive">1202190044</span>
-                                                        </p>
-                                                    </div>
-                                                    <div
-                                                        class="col-12 col-12 bg-red-2 bank-blood-rhesus-bottom text-white text-white pt-3">
-                                                        <p class="text-truncate">
-                                                            <i class="fas fa-minus-circle"></i>
-                                                            <span id="b_negative">1202190044</span>
-                                                        </p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-6 col-sm-12 mb-3">
-                                    <div class="bg-red bank-blood">
-                                        <div class="row">
-                                            <div class="col-4 m-auto">
-                                                <p class="text-center text-white text-title1 pl-2">O</p>
-                                            </div>
-                                            <div class="col-8">
-                                                <div class="row">
-                                                    <div class="col-12 bg-red-2 bank-blood-rhesus-top text-white pt-3">
-                                                        <p class="text-truncate">
-                                                            <i class="fas fa-plus-circle"></i>
-                                                            <span id="o_positive">1202190044</span>
-                                                        </p>
-
-                                                    </div>
-                                                    <div
-                                                        class="col-12 col-12 bg-red-2 bank-blood-rhesus-bottom text-white text-white pt-3">
-                                                        <p class="text-truncate">
-                                                            <i class="fas fa-minus-circle"></i>
-                                                            <span id="o_negative">1202190044</span>
-                                                        </p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div> -->
                     <small>Lokasi</small>
                     <p id="location" class="ellipsis-1 text-blue text-title1">Kantor PMI Kota Kediri</p>
                     <small class="mt-2">Alamat</small>

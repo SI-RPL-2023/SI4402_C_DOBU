@@ -151,16 +151,16 @@ ellipsis-2 {
     -webkit-box-orient: vertical;
 }
 
-.bank-blood {
+.bank-book {
     border-radius: 20px;
 }
 
-.bank-blood-rhesus-top {
+.bank-book-rhesus-top {
     border-top-right-radius: 25px;
     border-bottom: 3px solid #184EBA;
 }
 
-.bank-blood-rhesus-bottom {
+.bank-book-rhesus-bottom {
     border-bottom-right-radius: 25px;
     border-top: 3px solid #184EBA;
 }

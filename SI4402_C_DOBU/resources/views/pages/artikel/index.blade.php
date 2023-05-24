@@ -9,7 +9,7 @@
         <div class="col-md-5 col-sm-12 mt-5">
             <div class="input-wrapper mb-5">
                 <form action="{{ url('/artikel') }}" method="GET" id="search-form">
-                    <input type="search" class="input-search rounded" placeholder="Cari Acara Lainnya" name="search"
+                    <input type="search" class="input-search rounded" placeholder="Cari Artikel Lainnya" name="search"
                            id="query" autocomplete="off" value="{{ request('search') }}">
                 </form>
                 <svg xmlns="http://www.w3.org/2000/svg" class="input-icon" viewBox="0 0 20 20"
@@ -36,7 +36,7 @@
                             </div>
                             <div class="col-4">
                                 <img class="img-fluid rounded-right"
-                                     src="{{ $data->thumbnail_artikel ?? url('https://source.unsplash.com/350x200?blood')}}"
+                                     src="{{ $data->thumbnail_artikel ?? url('https://source.unsplash.com/350x200?book')}}"
                                      width="130px" alt="event">
                             </div>
                         </div>
@@ -79,7 +79,7 @@
                                     $endTime = \Carbon\Carbon::parse($data->end_time_artikel);
                                 @endphp
                                 <img class="img-fluid rounded"
-                                     src="{{ $data->thumbnail_artikel ?? url('https://source.unsplash.com/350x200?blood') }}"
+                                     src="{{ $data->thumbnail_artikel ?? url('https://source.unsplash.com/350x200?book') }}"
                                      alt="image">
                                 <p class="ellipsis-2 text-blue text-title1 mt-2">{{ $data->name_artikel }}</p>
                                 <p>

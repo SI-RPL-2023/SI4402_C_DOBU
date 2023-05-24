@@ -36,7 +36,7 @@
                             </div>
                             <div class="col-4">
                                 <img class="img-fluid rounded-right"
-                                     src="{{ $data->thumbnail_donor_events ?? url('https://source.unsplash.com/350x200?blood')}}"
+                                     src="{{ $data->thumbnail_donor_events ?? url('https://source.unsplash.com/350x200?book')}}"
                                      width="130px" alt="event">
                             </div>
                         </div>
@@ -80,7 +80,7 @@
                                     $endTime = \Carbon\Carbon::parse($data->end_time_donor_events);
                                 @endphp
                                 <img class="img-fluid rounded"
-                                     src="{{ $data->thumbnail_donor_events ?? url('https://source.unsplash.com/350x200?blood') }}"
+                                     src="{{ $data->thumbnail_donor_events ?? url('https://source.unsplash.com/350x200?book') }}"
                                      alt="image">
                                 <p class="ellipsis-2 text-blue text-title1 mt-2">{{ $data->name_donor_events }}</p>
                                 <p>

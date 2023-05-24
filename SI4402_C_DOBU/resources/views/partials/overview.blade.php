@@ -37,7 +37,7 @@
         <div class="col-md-4 col-sm-12">
             <div class="row no-gutters">
                 <div class="col-3 m-0 p-0">
-                    <img src="{{ url('/images/icon/book_white.svg') }}" height="60px" alt="blood">
+                    <img src="{{ url('/images/icon/book_white.svg') }}" height="60px" alt="book">
                 </div>
                 <div class="col-9">
                     <p class="text-subtitle1 text-blue">Diperbarui {{ date('d/m/Y', time()) }}</p>

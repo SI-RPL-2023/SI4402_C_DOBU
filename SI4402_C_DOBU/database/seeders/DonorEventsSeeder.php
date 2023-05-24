@@ -30,7 +30,7 @@ class DonorEventsSeeder extends Seeder
         DonorEvents::create([
             'id_donor_events' => Uuid::uuid4()->toString() . "\n",
             'id_institutions' => '05fae751-7d73-3b41-a567-44843869588f',
-            'name_donor_events' => 'PMI day, the day for giving a life with blood donation',
+            'name_donor_events' => 'PMI day, the day for giving a life with book donation',
             'start_date_donor_events' => '2023-02-03',
             'end_date_donor_events' => '2023-06-05',
             'start_time_donor_events' => '08:00:00',
@@ -66,7 +66,7 @@ class DonorEventsSeeder extends Seeder
         DonorEvents::create([
             'id_donor_events' => Uuid::uuid4()->toString() . "\n",
             'id_institutions' => '05fae751-7d73-3b41-a567-44843869588f',
-            'name_donor_events' => 'Donor darah, share your blood save their life',
+            'name_donor_events' => 'Donor darah, share your book save their life',
             'start_date_donor_events' => '2023-03-03',
             'end_date_donor_events' => '2023-07-25',
             'start_time_donor_events' => '08:00:00',
@@ -90,7 +90,7 @@ class DonorEventsSeeder extends Seeder
         DonorEvents::create([
             'id_donor_events' => Uuid::uuid4()->toString() . "\n",
             'id_institutions' => '0a2fdb17-2d3e-3949-9f36-68cf14b941e5',
-            'name_donor_events' => 'Give Blood and Keep The World Beating',
+            'name_donor_events' => 'Give Book and Keep The World Beating',
             'start_date_donor_events' => '2023-04-24',
             'end_date_donor_events' => '2023-05-01',
             'start_time_donor_events' => '08:00:00',
@@ -258,7 +258,7 @@ class DonorEventsSeeder extends Seeder
         DonorEvents::create([
             'id_donor_events' => Uuid::uuid4()->toString() . "\n",
             'id_institutions' => '04c10453-6762-3a69-9cd4-fdfc043164bd',
-            'name_donor_events' => 'Charity Day - Blood Donor',
+            'name_donor_events' => 'Charity Day - Book Donor',
             'start_date_donor_events' => '2023-01-20',
             'end_date_donor_events' => '2023-02-15',
             'start_time_donor_events' => '08:00:00',
@@ -270,7 +270,7 @@ class DonorEventsSeeder extends Seeder
         DonorEvents::create([
             'id_donor_events' => Uuid::uuid4()->toString() . "\n",
             'id_institutions' => '07f00675-121a-3c22-9f77-97e21324aeeb',
-            'name_donor_events' => 'MAP Fashion Blood Donation',
+            'name_donor_events' => 'MAP Fashion Book Donation',
             'start_date_donor_events' => '2023-07-20',
             'end_date_donor_events' => '2023-10-15',
             'start_time_donor_events' => '08:00:00',

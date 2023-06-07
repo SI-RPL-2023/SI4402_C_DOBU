@@ -24,8 +24,8 @@ class DashboardController extends Controller
             'active' => 'dashboard',
             'donorNotes' => $this->donorNotes(),
             'donorSubmissions' => $this->donorSubmissions(),
-            'stockPlasma' => $this->stockPlasma(),
-            'totalRequest' => $this->requestPlasma(),
+            'stockBook' => $this->stockBook(),
+            'totalPermintaan' => $this->requestBook(),
             'schedules' => $this->schedule(),
             'covidData' => $this->getCovid()
         ]);
@@ -36,7 +36,7 @@ class DashboardController extends Controller
         return new ArtikelController();
     }
 
-    public function stockPlasma()
+    public function stockBook()
     {
         $bookBank = BookBank::all();
         $ap = $bookBank->sum('Novel');
@@ -51,7 +51,7 @@ class DashboardController extends Controller
         return $ap + $an + $abp + $abn + $bp + $bn + $op + $on;
     }
 
-    public function requestPlasma()
+    public function requestBook()
     {
         return DB::table('donor_submissions')
             ->where('status_donor_submissions', '=', '2')

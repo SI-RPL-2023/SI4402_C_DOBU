@@ -233,7 +233,7 @@
                             <div id="faq-list-3" class="collapse" data-bs-parent=".faq-list">
                                 <p>
                                     Anda dapat mendaftarkan diri sebagai donasi buku,ar mencari informasi tentang donor
-                                    darah yang tersedia, dan mengelola data donasi buku melalui aplikasi DOBU.
+                                    buku yang tersedia, dan mengelola data donasi buku melalui aplikasi DOBU.
                                 </p>
                             </div>
                         </li>

@@ -69,15 +69,13 @@
                 </div>
                 <div class="modal-body">
                     <small>Lokasi</small>
-                    <p id="location" class="ellipsis-1 text-blue text-title1">Kantor PMI Kota Kediri</p>
+                    <p id="location" class="ellipsis-1 text-blue text-title1">The park Mall Solo Baru</p>
                     <small class="mt-2">Alamat</small>
-                    <p id="address" class="ellipsis-2 text-blue text-title1">Jl. Mayor Bismo No.15, Mojoroto, Kec.
-                        Mojoroto, Kota
-                        Kediri, Jawa Timur 64121</p>
+                    <p id="address" class="ellipsis-2 text-blue text-title1">Jl.solo</p>
                     <small class="mt-5">Kontak</small>
                     <p id="contact" class="ellipsis-1 text-blue text-title1">085608845319</p>
                     <small class="mt-5">Email</small>
-                    <p id="email" class="ellipsis-1 text-blue text-title1">muhammad.rezki.ananda@gmail.com</p>
+                    <p id="email" class="ellipsis-1 text-blue text-title1">diyas@gmail.com</p>
                 </div>
                 <div class="modal-footer">
                     <form action="{{ url('/donor') }}" method="GET">

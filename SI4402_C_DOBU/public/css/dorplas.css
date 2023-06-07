@@ -155,12 +155,12 @@ ellipsis-2 {
     border-radius: 20px;
 }
 
-.bank-book-rhesus-top {
+.bank-book-book-top {
     border-top-right-radius: 25px;
     border-bottom: 3px solid #184EBA;
 }
 
-.bank-book-rhesus-bottom {
+.bank-book-book-bottom {
     border-bottom-right-radius: 25px;
     border-top: 3px solid #184EBA;
 }

@@ -61,15 +61,15 @@
                     @enderror
                 </div>
                 <div class="form-group mb-3 w-75">
-                    <label for="rhesus_type_donators" class="text-title1 text-blue">Jenis Kelamin</label>
+                    <label for="book_type_donators" class="text-title1 text-blue">Jenis Kelamin</label>
                     <select
-                        class="custom-select text-title1 text-blue mt-1 @error('rhesus_type_donators') is-invalid @enderror"
-                        id="rhesus_type_donators" name="rhesus_type_donators" required>
+                        class="custom-select text-title1 text-blue mt-1 @error('book_type_donators') is-invalid @enderror"
+                        id="book_type_donators" name="book_type_donators" required>
                         <option value="" disabled selected>Kelamin</option>
                         <option value="Wanita">Wanita</option>
                         <option value="Pria">Pria</option>
                     </select>
-                    @error('rhesus_type_donators')
+                    @error('book_type_donators')
                     <div class="invalid-feedback">
                         {{ $message }}
                     </div>

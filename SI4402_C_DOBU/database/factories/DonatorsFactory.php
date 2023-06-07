@@ -13,8 +13,8 @@ class DonatorsFactory extends Factory
      * @return array
      */
 
-    private $booktype = ['O', 'A', 'B', 'AB'];
-    private $rhesus = ['positive', 'negative'];
+    private $booktype = ['Novel', 'Komik', 'Kamus', 'Atlas', 'Biografi', 'Ilmiah', 'Majalah', 'Dongeng'];
+    // private $book = ['positive', 'negative'];
     private $gender = ['male', 'female'];
 
     public function definition()
@@ -26,7 +26,7 @@ class DonatorsFactory extends Factory
             'password_donators' => Hash::make(12345),
             'gender_donators' => $this->faker->randomElement($this->gender),
             'status_donators' => $this->faker->randomElement($this->booktype),
-            'rhesus_type_donators' => $this->faker->randomElement($this->rhesus),
+            'book_type_donators' => $this->faker->randomElement($this->book),
             'contact_donators' => $this->faker->unique->phoneNumber(),
             'address_donators' => $this->faker->address(),
             'point_donators' => mt_rand(0, 100)

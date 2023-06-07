@@ -20,14 +20,14 @@ class DashboardEmployeeController extends Controller
         return view('pages.dashboard.admin', [
             'title' => 'Dashboard',
             'active' => 'dashboard',
-            'stockPlasma' => $this->stockPlasma(),
-            'totalRequest' => $this->requestPlasma(),
+            'stockBook' => $this->stockBook(),
+            'totalPermintaan' => $this->requestBook(),
             'donorNotes' => $this->donorNotes(),
             'donorSubmissions' => $this->donorSubmissions()
         ]);
     }
 
-    public function stockPlasma()
+    public function stockBook()
     {
         $bookBank = BookBank::where('id_institutions', '=', Auth::user()->id_institutions);
         $ap = $bookBank->sum('Novel');
@@ -42,7 +42,7 @@ class DashboardEmployeeController extends Controller
         return $ap + $an + $abp + $abn + $bp + $bn + $op + $on;
     }
 
-    public function requestPlasma()
+    public function requestBook()
     {
         return DB::table('donor_submissions')
             ->whereNested(function ($query) {

@@ -42,14 +42,14 @@
                 <div class="col-9">
                     <p class="text-subtitle1 text-blue">Diperbarui {{ date('d/m/Y', time()) }}</p>
                     <p class="text-title1 text-red">Stok Buku</p>
-                    <p class="text-body1 text-blue">{{ $stockPlasma }} Buku</p>
+                    <p class="text-body1 text-blue">{{ $stockBook }} Buku</p>
                 </div>
             </div>
         </div>
-        <div class="col-md-4 col-sm-12 ">
+        <!-- <div class="col-md-4 col-sm-12 ">
             <p class="text-title1 text-red mt-2">Permintaan</p>
             <img src="{{ url('/images/icon/ic_search.svg') }}" alt="search" width="17px">
-            <span class="text-body1 text-blue">{{ $totalRequest }}</span>
-        </div>
+            <span class="text-body1 text-blue">{{ $totalPermintaan }}</span>
+        </div> -->
     </div>
 </div>

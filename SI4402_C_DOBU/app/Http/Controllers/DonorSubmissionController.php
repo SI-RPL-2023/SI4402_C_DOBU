@@ -13,10 +13,10 @@ class DonorSubmissionController extends Controller
     public function index()
     {
         return view('pages.donor.submission', [
-            'title' => 'Request Plasma',
+            'title' => 'Request Book',
             'active' => 'donor',
-            'stockPlasma' => $this->dashboard()->stockPlasma(),
-            'totalRequest' => $this->dashboard()->requestPlasma(),
+            'stockBook' => $this->dashboard()->stockBook(),
+            'totalPermintaan' => $this->dashboard()->requestBook(),
             'institutions' => Institutions::all()
         ]);
     }

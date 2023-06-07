@@ -46,7 +46,7 @@ class InstitutionsSeeder extends Seeder
 
         Institutions::create([
             'id_institutions' => '05fae751-7d73-3b41-a567-44843869588f',
-            'name_institutions' => 'Unit Tranfusi Darah Palang Merah Indonesia Kota Surabaya',
+            'name_institutions' => 'Unit Tranfusi buku Palang Merah Indonesia Kota Surabaya',
             'contact_institutions' => '(031) 531328',
             'email_institutions' => 'contact.pmi@gmail.com',
             'address_institutions' => 'Jl. Embong Ploso No.7-15, Embong Kaliasin, Kec. Genteng, Kota SBY, Jawa Timur 60271',
@@ -86,7 +86,7 @@ class InstitutionsSeeder extends Seeder
 
         Institutions::create([
             'id_institutions' => '537b0937-ddf0-3143-afb9-5511d880d50c',
-            'name_institutions' => 'Unit Donor Darah PMI Kota Semarang',
+            'name_institutions' => 'Unit Donor buku PMI Kota Semarang',
             'contact_institutions' => '(024) 3515050',
             'email_institutions' => 'kota_semarang@pmi.or.id',
             'address_institutions' => 'Jl. Mgr Sugiyopranoto No.31, Pendrikan Kidul, Kec. Semarang Tengah, Kota Semarang, Jawa Tengah 50131',

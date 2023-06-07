@@ -16,8 +16,8 @@ class DonorNoteController extends Controller
         return view('pages.donor.index', [
             'title' => 'Donor',
             'active' => 'donor',
-            'stockPlasma' => $this->dashboard()->stockPlasma(),
-            'totalRequest' => $this->dashboard()->requestPlasma(),
+            'stockBook' => $this->dashboard()->stockBook(),
+            'totalPermintaan' => $this->dashboard()->requestBook(),
             'institutions' => Institutions::all(),
             'institutionSelected' => $this->getInstitutions(),
             'eventSelected' => $this->getEvent()
@@ -44,7 +44,7 @@ class DonorNoteController extends Controller
 
         DonorNotes::create($validateData);
 
-        return redirect('/donor')->with('donorSuccess', 'Berhasil melakukan pendaftaran donor darah, silahkan pantau di menu akun');
+        return redirect('/donor')->with('donorSuccess', 'Berhasil melakukan pendaftaran Donasi buku, silahkan pantau di menu akun');
     }
 
     public function getInstitutions()

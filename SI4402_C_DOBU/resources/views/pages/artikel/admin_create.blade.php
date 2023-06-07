@@ -16,7 +16,7 @@
             @endif
             <h3 class="text-blue font-weight-bold mt-5 mb-5">
                 <a class="text-decoration-none" href="{{ url('/_artikel') }}"><i class="fas fa-arrow-left text-red"></i>&emsp;&emsp;</a>
-                Tambah Acara
+                Tambah Artikel
             </h3>
             <form action="{{ url('/_artikel') }}" method="POST" enctype="multipart/form-data">
                 @csrf

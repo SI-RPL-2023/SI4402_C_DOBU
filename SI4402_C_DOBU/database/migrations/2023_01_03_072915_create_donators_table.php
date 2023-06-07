@@ -20,7 +20,7 @@ class CreateDonatorsTable extends Migration
             $table->string('password_donators');
             $table->string('gender_donators')->nullable();
             $table->string('status_donators');
-            $table->string('rhesus_type_donators');
+            $table->string('book_type_donators');
             $table->string('contact_donators');
             $table->text('address_donators');
             $table->integer('point_donators')->default(0);

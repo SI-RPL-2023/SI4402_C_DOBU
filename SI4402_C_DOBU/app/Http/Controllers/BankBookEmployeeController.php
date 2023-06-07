@@ -17,15 +17,15 @@ class BankBookEmployeeController extends Controller
     public function index()
     {
         return view('pages.bank.index', [
-            'title' => 'Bank Darah',
+            'title' => 'Bank Buku',
             'active' => 'bank',
-            'stockPlasma' => $this->stockPlasma(),
-            'totalRequest' => $this->requestPlasma(),
+            'stockBook' => $this->stockBook(),
+            'totalPermintaan' => $this->requestBook(),
             'bookBank' => $this->bookBank()
         ]);
     }
 
-    public function stockPlasma()
+    public function stockBook()
     {
         $bookBank = BookBank::where('id_institutions', '=', Auth::user()->id_institutions);
         $ap = $bookBank->sum('Novel');
@@ -40,7 +40,7 @@ class BankBookEmployeeController extends Controller
         return $ap + $an + $abp + $abn + $bp + $bn + $op + $on;
     }
 
-    public function requestPlasma()
+    public function requestBook()
     {
         return DB::table('donor_submissions')
             ->whereNested(function ($query) {
@@ -72,6 +72,6 @@ class BankBookEmployeeController extends Controller
 
         BookBank::where('id_institutions', '=', Auth::user()->id_institutions)->update($validateData);
 
-        return redirect('/_bank')->with('updateSuccess', 'Berhasil Memperbarui Bank Darah');
+        return redirect('/_bank')->with('updateSuccess', 'Berhasil Memperbarui Bank Buku');
     }
 }

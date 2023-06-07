@@ -16,7 +16,7 @@ class DonorSubmissionEmployeeController extends Controller
     public function index()
     {
         return view('pages.donor.submission_admin', [
-            'title' => 'Request Plasma',
+            'title' => 'Request Book',
             'active' => 'submission',
         ]);
     }
@@ -27,13 +27,13 @@ class DonorSubmissionEmployeeController extends Controller
 
         return DataTables::of($model)
             ->addIndexColumn()
-            ->addColumn('rhesus_type_donor_submissions', function ($model) {
-                if ($model->rhesus_type_donor_submissions == 'positive') {
+            ->addColumn('book_type_donor_submissions', function ($model) {
+                if ($model->book_type_donor_submissions == 'positive') {
                     return "Positif (+)";
-                } else if ($model->rhesus_type_donor_submissions == 'negative') {
+                } else if ($model->book_type_donor_submissions == 'negative') {
                     return "Negatif (-)";
                 }
-                return $model->rhesus_type_donor_submissions;
+                return $model->book_type_donor_submissions;
             })
             ->addColumn('time_used_donor_submissions', function ($model) {
                 if ($model->time_used_donor_submissions == null){
@@ -135,9 +135,9 @@ class DonorSubmissionEmployeeController extends Controller
             if (File::exists(public_path($data->letter_donor_submissions))) {
                 File::delete(public_path($data->letter_donor_submissions));
             }
-            return redirect('/_submission')->with('info', "Request plasma berhasil dihapus");
+            return redirect('/_submission')->with('info', "Request book berhasil dihapus");
         } catch (Exception $e) {
-            return redirect('/_submission')->with('info', "Request plasma gagal dihapus");
+            return redirect('/_submission')->with('info', "Request book gagal dihapus");
         }
     }
 }

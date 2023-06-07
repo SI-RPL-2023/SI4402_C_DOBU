@@ -8,7 +8,7 @@
             <table id="myTable" class="table table-stripped text-grey">
                 <thead>
                 <tr>
-                    <th>No.</th>
+                    <th>No .</th>
                     <th>Penerima</th>
                     <th>Pemohon</th>
                     <th>Jenis Buku</th>
